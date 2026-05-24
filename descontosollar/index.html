@@ -1,0 +1,2659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N2JZ7G3C');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Economize até 25% na sua conta de energia da CEMIG com a Desconto Sollar. Energia solar por assinatura, sem obras e sem custos iniciais. Atendimento rápido pelo WhatsApp com nossa consultora virtual Sol.">
+  <meta name="keywords" content="Desconto Sollar, Energia Solar por Assinatura, Economia de Energia, CEMIG, Sol IA, Sustentabilidade, Minas Gerais, Sem Obras">
+  <meta name="author" content="Desconto Sollar">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://descontosollar.com.br/">
+  <meta property="og:title" content="Desconto Sollar — Economia de Energia Solar por Assinatura">
+  <meta property="og:description" content="Economize até 25% na sua fatura da CEMIG de forma simples, 100% digital e sem investimentos. Conheça a Sol, nossa consultora virtual.">
+  
+  <title>Desconto Sollar — Economia de Energia Solar por Assinatura</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ── DESIGN SYSTEM & VARIÁVEIS ── */
+    :root {
+      /* Paleta Oficial Desconto Sollar */
+      --primary:        #459395;
+      --primary-esc:    #2E6769;
+      --primary-claro:  #EBF4F4;
+      --primary-mid:    #50A4A6;
+      --accent:         #E3803B;
+      --accent-esc:     #C76722;
+      --accent-claro:   #FDF0E9;
+      --accent-glow:    rgba(227, 128, 59, 0.12);
+      
+      --cinza-bg:       #F5F7FA;
+      --cinza-borda:    #E2E8F0;
+      --texto:          #1E293B;
+      --texto-sub:      #64748B;
+      --branco:         #FFFFFF;
+      
+      /* Sistema de Grid e Layout */
+      --container-width:1200px;
+      --header-height:  80px;
+      --border-radius:  16px;
+      --transition:     all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-sm:      0 2px 8px rgba(69, 147, 149, 0.05);
+      --shadow-md:      0 10px 30px rgba(69, 147, 149, 0.08);
+      --shadow-lg:      0 20px 45px rgba(46, 103, 105, 0.12);
+      --glass-bg:       rgba(255, 255, 255, 0.75);
+      --glass-border:   rgba(226, 232, 240, 0.5);
+    }
+
+    /* ── RESET & CONFIGURAÇÕES GERAIS ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cinza-bg);
+      color: var(--texto);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      color: var(--primary-esc);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ── UTILITIES ── */
+    .text-center { text-align: center; }
+    .hidden { display: none !important; }
+    .text-accent { color: var(--accent) !important; }
+    .border-left { border-left: 1px solid var(--cinza-borda); }
+
+    /* ── BOTÕES ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      color: var(--branco);
+      box-shadow: 0 4px 15px rgba(38, 125, 125, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(38, 125, 125, 0.45);
+      background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary) 100%);
+    }
+
+    .btn-secondary {
+      background-color: var(--primary-claro);
+      color: var(--primary-esc);
+      border: 1.5px solid rgba(38, 125, 125, 0.2);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--branco);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-accent {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-esc) 100%);
+      color: var(--branco);
+      box-shadow: 0 4px 15px rgba(217, 95, 26, 0.3);
+    }
+
+    .btn-accent:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(217, 95, 26, 0.45);
+      background: linear-gradient(135deg, var(--accent-esc) 0%, var(--accent) 100%);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+      color: var(--branco);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+      background: linear-gradient(135deg, #20BA5A 0%, #25D366 100%);
+    }
+
+    .btn-whatsapp:hover svg {
+      transform: scale(1.1);
+    }
+
+    .flex-column-whatsapp {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .btn-tertiary {
+      background-color: transparent;
+      color: var(--primary-esc);
+      border: 1.5px solid var(--primary);
+    }
+
+    .btn-tertiary:hover {
+      background-color: var(--primary-claro);
+      transform: translateY(-2px);
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    .btn-icon svg {
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover svg {
+      transform: scale(1.1);
+    }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(38, 125, 125, 0.1);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      height: 70px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LOGO */
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.45rem;
+      line-height: 1;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-item {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--texto-sub);
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-item:hover {
+      color: var(--primary);
+    }
+
+    .nav-item::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav-item:hover::after {
+      width: 100%;
+    }
+
+    .nav-btn {
+      padding: 10px 20px;
+      font-size: 0.85rem;
+    }
+
+    /* MENU TOGGLE (MOBILE) */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu-toggle span {
+      width: 100%;
+      height: 2.5px;
+      background-color: var(--primary-esc);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ── HERO SECTION ── */
+    .hero-section {
+      position: relative;
+      padding-top: calc(var(--header-height) + 60px);
+      padding-bottom: 80px;
+      background: radial-gradient(circle at 10% 20%, rgba(235, 244, 244, 0.4) 0%, rgba(255, 255, 255, 1) 90%);
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(38, 125, 125, 0.08) 0%, rgba(255,255,255,0) 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--primary-claro);
+      border: 1px solid rgba(38, 125, 125, 0.2);
+      color: var(--primary-esc);
+      font-weight: 700;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      margin-bottom: 24px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--texto-sub);
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+    }
+
+    .stat-item {
+      padding-right: 12px;
+    }
+
+    .stat-item h4 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .stat-item p {
+      font-size: 0.8rem;
+      color: var(--texto-sub);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    /* HERO VISUALS */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .proposal-card-mockup {
+      width: 100%;
+      max-width: 380px;
+      background: var(--branco);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--cinza-borda);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      position: relative;
+      transform: rotate(2deg);
+      transition: var(--transition);
+    }
+
+    .proposal-card-mockup:hover {
+      transform: rotate(0deg) translateY(-8px);
+    }
+
+    .mockup-header {
+      background: var(--cinza-bg);
+      padding: 12px 18px;
+      border-bottom: 1.5px solid var(--cinza-borda);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mockup-header .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .mockup-header .dot.red { background-color: #FF5F56; }
+    .mockup-header .dot.yellow { background-color: #FFBD2E; }
+    .mockup-header .dot.green { background-color: #27C93F; }
+
+    .mockup-header .mockup-title {
+      margin-left: 8px;
+      font-size: 0.75rem;
+      color: var(--texto-sub);
+      font-weight: 600;
+    }
+
+    .mockup-body {
+      padding: 24px;
+    }
+
+    .mockup-brand {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .mockup-brand span { color: var(--accent); }
+
+    .mockup-client {
+      margin-bottom: 16px;
+    }
+
+    .mockup-client .lbl {
+      font-size: 0.68rem;
+      color: var(--texto-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: block;
+    }
+
+    .mockup-client strong {
+      font-size: 1.05rem;
+      color: var(--primary-esc);
+      font-weight: 700;
+    }
+
+    .mockup-divider {
+      height: 1.5px;
+      background-color: var(--cinza-borda);
+      margin: 16px 0;
+    }
+
+    .mockup-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      margin-bottom: 10px;
+      color: var(--texto-sub);
+    }
+
+    .badge-discount {
+      background-color: var(--accent-glow);
+      color: var(--accent);
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+    }
+
+    .mockup-row.highlight-green {
+      background-color: rgba(38, 125, 125, 0.08);
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: var(--texto);
+    }
+
+    .mockup-row.highlight-green strong {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .mockup-row.highlight-blue {
+      background-color: var(--accent-claro);
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: var(--texto);
+      margin-bottom: 20px;
+    }
+
+    .mockup-row.highlight-blue strong {
+      color: var(--accent-esc);
+      font-size: 1.1rem;
+    }
+
+    .mockup-footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .badge-certified {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: var(--cinza-bg);
+      border: 1px dashed var(--cinza-borda);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--texto-sub);
+    }
+
+    .badge-certified svg {
+      color: var(--primary);
+    }
+
+    /* FLOATING WHATSAPP CHAT PREVIEW */
+    .whatsapp-bubble-preview {
+      position: absolute;
+      bottom: -30px;
+      left: -40px;
+      width: 280px;
+      background-color: var(--branco);
+      border-radius: 12px;
+      box-shadow: var(--shadow-md);
+      border: 1.5px solid var(--primary-claro);
+      overflow: hidden;
+      z-index: 10;
+      animation: floatBubble 6s ease-in-out infinite;
+    }
+
+    .wp-header {
+      background-color: #075E54;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--branco);
+    }
+
+    .wp-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--primary-claro);
+      color: var(--primary-esc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+
+    .wp-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .wp-info strong {
+      font-size: 0.8rem;
+    }
+
+    .wp-info span {
+      font-size: 0.62rem;
+      opacity: 0.8;
+    }
+
+    .wp-message {
+      padding: 12px 14px;
+      font-size: 0.78rem;
+      background-color: #DCF8C6;
+      margin: 10px;
+      border-radius: 8px;
+      border-top-left-radius: 0;
+      color: #303030;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    @keyframes floatBubble {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ── SECTIONS GENERAL ── */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      max-width: 650px;
+      margin: 0 auto 56px;
+    }
+
+    .subtitle {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--primary-esc);
+      margin-bottom: 16px;
+    }
+
+    .section-title p {
+      color: var(--texto-sub);
+      font-size: 1.05rem;
+    }
+
+    /* ── BENEFITS SECTION ── */
+    .benefits-section {
+      background-color: var(--branco);
+      border-bottom: 1px solid var(--cinza-borda);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .benefit-card {
+      background-color: var(--cinza-bg);
+      border: 1px solid var(--cinza-borda);
+      border-radius: var(--border-radius);
+      padding: 40px 32px;
+      transition: var(--transition);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(38, 125, 125, 0.3);
+      box-shadow: var(--shadow-md);
+      background-color: var(--branco);
+    }
+
+    .benefit-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background-color: var(--primary-claro);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .benefit-card h3 {
+      font-size: 1.25rem;
+      color: var(--primary-esc);
+      margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+      color: var(--texto-sub);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── CALCULATOR SECTION ── */
+    .calculator-section {
+      background-color: var(--cinza-bg);
+      position: relative;
+    }
+
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .calculator-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .calculator-text p {
+      color: var(--texto-sub);
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+
+    .calculator-info-box {
+      background-color: var(--branco);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .calculator-info-box h4 {
+      font-size: 0.95rem;
+      color: var(--primary-esc);
+      margin-bottom: 8px;
+    }
+
+    .calculator-info-box p {
+      font-size: 0.88rem;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* CALCULATOR CONTAINER CARD */
+    .calculator-card {
+      background-color: var(--branco);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--cinza-borda);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .calc-inputs {
+      padding: 36px;
+    }
+
+    .input-group {
+      margin-bottom: 24px;
+    }
+
+    .input-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .input-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--primary-esc);
+      margin-bottom: 12px;
+    }
+
+    .input-prefix-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .currency-prefix {
+      position: absolute;
+      left: 18px;
+      font-weight: 700;
+      color: var(--primary-mid);
+      font-size: 1.1rem;
+    }
+
+    .input-prefix-wrapper input {
+      width: 100%;
+      padding: 16px 18px 16px 18px;
+      border-radius: 12px;
+      border: 1.5px solid var(--cinza-borda);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary-esc);
+      outline: none;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .input-prefix-wrapper input[type="number"]:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-claro);
+    }
+
+    /* Slider Style */
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: var(--cinza-borda);
+      border-radius: 5px;
+      outline: none;
+      margin-top: 16px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--primary);
+      cursor: pointer;
+      border: 2px solid var(--branco);
+      box-shadow: 0 2px 6px rgba(38, 125, 125, 0.3);
+      transition: var(--transition);
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+      background-color: var(--primary-mid);
+    }
+
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--texto-sub);
+      margin-top: 8px;
+    }
+
+    /* Badge Display for fixed discount */
+    .discount-badge-display {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--accent-claro);
+      border: 1px solid rgba(217, 95, 26, 0.2);
+      color: var(--accent-esc);
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .discount-badge-display svg {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* Results box in calculator */
+    .calc-results {
+      background: linear-gradient(135deg, var(--primary-esc) 0%, #0d3333 100%);
+      padding: 36px;
+      color: var(--branco);
+    }
+
+    .results-header {
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .result-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 16px 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .result-box.highlighted {
+      border-left: 3px solid var(--primary);
+    }
+
+    .result-box.highlighted:nth-child(2) {
+      border-left-color: var(--accent);
+    }
+
+    .res-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.65);
+      letter-spacing: 0.5px;
+      display: block;
+    }
+
+    .res-val {
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--branco);
+      margin-top: 4px;
+    }
+
+    .res-sub {
+      font-size: 0.68rem;
+      color: rgba(255, 255, 255, 0.45);
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* ── HOW IT WORKS SECTION ── */
+    .how-it-works-section {
+      background-color: var(--branco);
+      border-bottom: 1px solid var(--cinza-borda);
+    }
+
+    .steps-flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      position: relative;
+    }
+
+    /* Flow Line connecting steps */
+    .steps-flow::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      background-color: var(--primary-claro);
+      z-index: 0;
+    }
+
+    .step-card {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--branco);
+      border: 4px solid var(--primary-claro);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.8rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .step-card:hover .step-number {
+      border-color: var(--primary);
+      color: var(--branco);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-esc) 100%);
+      transform: scale(1.05);
+    }
+
+    .step-card h3 {
+      font-size: 1.15rem;
+      color: var(--primary-esc);
+      margin-bottom: 12px;
+    }
+
+    .step-card p {
+      color: var(--texto-sub);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .step-card p strong {
+      color: var(--texto);
+    }
+
+    /* ── SOL AI SECTION ── */
+    .sol-section {
+      background-color: var(--cinza-bg);
+    }
+
+    .sol-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .sol-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* WHATSAPP CONTAINER MOCKUP */
+    .chat-mockup-wrapper {
+      width: 100%;
+      max-width: 350px;
+      height: 480px;
+      background-color: #ECE5DD; /* WhatsApp default bg */
+      border-radius: var(--border-radius);
+      border: 1px solid var(--cinza-borda);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background-color: #075E54;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--branco);
+    }
+
+    .chat-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary-claro) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23184D4D"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>') no-repeat center/22px;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .chat-status-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+
+    .chat-status-info strong {
+      font-size: 0.85rem;
+    }
+
+    .chat-status-info span {
+      font-size: 0.65rem;
+      opacity: 0.8;
+    }
+
+    .chat-actions-svg {
+      color: var(--branco);
+      opacity: 0.85;
+    }
+
+    .chat-body {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      scroll-behavior: smooth;
+    }
+
+    .msg {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      position: relative;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+    }
+
+    .msg.received {
+      background-color: var(--branco);
+      align-self: flex-start;
+      border-top-left-radius: 0;
+      color: var(--texto);
+    }
+
+    .msg.sent {
+      background-color: #DCF8C6;
+      align-self: flex-end;
+      border-top-right-radius: 0;
+      color: #303030;
+    }
+
+    /* Typing Indicator Animation */
+    .msg.typing {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 16px;
+      background-color: var(--branco);
+    }
+
+    .dot-typing {
+      width: 6px;
+      height: 6px;
+      background-color: #90A4AE;
+      border-radius: 50%;
+      animation: typing 1.4s infinite ease-in-out both;
+    }
+
+    .dot-typing:nth-child(2) { animation-delay: 0.2s; }
+    .dot-typing:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes typing {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+      45% { transform: scale(1.1); opacity: 1; }
+    }
+
+    .sol-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .sol-text p {
+      color: var(--texto-sub);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+    }
+
+    .sol-features {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .sol-features li {
+      display: flex;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--texto-sub);
+      align-items: flex-start;
+    }
+
+    .sol-features li svg {
+      color: var(--primary);
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .sol-features li strong {
+      color: var(--texto);
+    }
+
+    /* ── FAQ SECTION ── */
+    .faq-section {
+      background-color: var(--branco);
+      border-bottom: 1px solid var(--cinza-borda);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background-color: var(--cinza-bg);
+      border: 1px solid var(--cinza-borda);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(38, 125, 125, 0.25);
+      background-color: var(--branco);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 22px 28px;
+      background: transparent;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--primary-esc);
+      font-family: inherit;
+    }
+
+    .faq-question .arrow {
+      color: var(--primary-mid);
+      transition: var(--transition);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      padding: 0 28px;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--texto-sub);
+      line-height: 1.7;
+      padding-bottom: 24px;
+    }
+
+    .faq-answer p strong {
+      color: var(--texto);
+    }
+
+    /* Open State */
+    .faq-item.active {
+      background-color: var(--branco);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item.active .faq-question .arrow {
+      transform: rotate(180deg);
+      color: var(--primary);
+    }
+
+    /* ── CONTACT SECTION ── */
+    .contact-section {
+      background-color: var(--cinza-bg);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .contact-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-text p {
+      color: var(--texto-sub);
+      font-size: 1.05rem;
+      margin-bottom: 36px;
+    }
+
+    .contact-highlight-whatsapp {
+      background-color: var(--branco);
+      border-radius: var(--border-radius);
+      border: 1.5px solid var(--primary-claro);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-highlight-whatsapp p {
+      font-size: 0.88rem;
+      color: var(--texto);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .whatsapp-badge-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #075E54;
+    }
+
+    .whatsapp-badge-link:hover {
+      text-decoration: underline;
+      transform: translateX(4px);
+    }
+
+    .badge-pulsing-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #25D366;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      animation: pulseDot 1.6s infinite;
+    }
+
+    @keyframes pulseDot {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* CONTACT CARD & FORM */
+    .contact-card {
+      background-color: var(--branco);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--cinza-borda);
+      box-shadow: var(--shadow-lg);
+      padding: 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--primary-esc);
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 10px;
+      border: 1.5px solid var(--cinza-borda);
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--texto);
+      outline: none;
+      background-color: var(--branco);
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-claro);
+    }
+
+    /* Button Loading State Styles */
+    .btn-submit {
+      position: relative;
+    }
+
+    .btn-spinner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spinner {
+      animation: rotateSpinner 2s linear infinite;
+      width: 20px;
+      height: 20px;
+    }
+
+    .spinner .path {
+      stroke: var(--branco);
+      stroke-linecap: round;
+      animation: dashSpinner 1.5s ease-in-out infinite;
+    }
+
+    @keyframes rotateSpinner {
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes dashSpinner {
+      0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+      50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+      100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+    }
+
+    /* SUCCESS SCREEN OVERLAY */
+    .form-success-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--branco);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: var(--accent-glow);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .form-success-overlay h3 {
+      font-size: 1.5rem;
+      color: var(--primary-esc);
+      margin-bottom: 12px;
+    }
+
+    .form-success-overlay p {
+      color: var(--texto-sub);
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+      max-width: 320px;
+    }
+
+    /* ── MAIN FOOTER ── */
+    .main-footer {
+      background-color: var(--primary-esc);
+      color: var(--branco);
+      padding-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand .logo-text {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand .logo-text span {
+      color: var(--branco);
+      opacity: 0.7;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--branco);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      width: fit-content;
+    }
+
+    .footer-links a:hover {
+      color: var(--branco);
+      transform: translateX(4px);
+    }
+
+    .footer-contact p {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .footer-contact p.highlight-text {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--primary-claro);
+      border-left: 2.5px solid var(--primary-claro);
+      padding-left: 12px;
+    }
+
+    .footer-bottom {
+      padding: 30px 0;
+      background-color: #0d3333;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .bottom-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ── FLOATING WHATSAPP BUTTON ── */
+    .floating-whatsapp-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      color: var(--branco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp-btn:hover {
+      transform: scale(1.1) rotate(5deg);
+      background-color: #20BA5A;
+    }
+
+    .floating-whatsapp-btn .tooltip {
+      position: absolute;
+      right: 76px;
+      background-color: var(--texto);
+      color: var(--branco);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(10px);
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp-btn:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    /* ── RESPONSIVIDADE (MEDIA QUERIES) ── */
+    @media (max-width: 1024px) {
+      html { font-size: 15px; }
+      
+      .hero-grid,
+      .calculator-grid,
+      .sol-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      
+      .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .hero-ctas {
+        justify-content: center;
+      }
+      
+      .hero-stats {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .hero-visual {
+        margin-top: 20px;
+      }
+      
+      .proposal-card-mockup {
+        transform: rotate(0deg);
+      }
+      
+      .whatsapp-bubble-preview {
+        left: 10px;
+      }
+      
+      .benefits-grid,
+      .steps-flow {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .steps-flow::before {
+        display: none;
+      }
+      
+      .step-card {
+        padding: 24px 20px;
+        background-color: var(--cinza-bg);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--cinza-borda);
+      }
+      
+      .sol-text,
+      .contact-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .sol-features {
+        text-align: left;
+        max-width: 500px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .bottom-flex {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* NAVBAR MOBILE OPEN/CLOSE */
+      .menu-toggle {
+        display: flex;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background-color: var(--branco);
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 24px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        transition: var(--transition);
+      }
+      
+      .nav-menu.open {
+        left: 0;
+      }
+
+      .navbar.scrolled .nav-menu {
+        top: 70px;
+        height: calc(100vh - 70px);
+      }
+      
+      .nav-btn {
+        width: 100%;
+      }
+      
+      /* Menu Burger animations */
+      .menu-toggle.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      
+      .hero-content h1 {
+        font-size: 2.3rem;
+      }
+      
+      .section-title h2,
+      .calculator-text h2,
+      .sol-text h2,
+      .contact-text h2 {
+        font-size: 1.8rem;
+      }
+      
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      
+      .contact-card {
+        padding: 24px;
+      }
+      
+      .floating-whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+      }
+      
+      .floating-whatsapp-btn .tooltip {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2JZ7G3C"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo-link" id="nav-logo">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+          <!-- Main Diagonal Bar (Teal) -->
+          <line x1="22" y1="78" x2="78" y2="22" stroke="#459395" stroke-width="12" stroke-linecap="round" />
+          <!-- Top-Left Diagonal Bar (Orange) -->
+          <line x1="22" y1="22" x2="38" y2="38" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+          <!-- Bottom-Right Diagonal Bar (Orange) -->
+          <line x1="62" y1="62" x2="78" y2="78" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+          <!-- Left Horizontal Bar (Orange) -->
+          <line x1="12" y1="50" x2="28" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+          <!-- Right Horizontal Bar (Orange) -->
+          <line x1="72" y1="50" x2="88" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+          <!-- Top Circle (Teal) -->
+          <circle cx="50" cy="18" r="9" fill="#459395" />
+          <!-- Bottom Circle (Teal) -->
+          <circle cx="50" cy="82" r="9" fill="#459395" />
+        </svg>
+        <div class="logo-text">Desconto<span>Sollar</span></div>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#como-funciona" class="nav-item">Como Funciona</a>
+        <a href="#calculadora" class="nav-item">Calculadora</a>
+        <a href="#sol" class="nav-item">A Sol</a>
+        <a href="#faq" class="nav-item">Dúvidas</a>
+        <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Quero%20simular%20meu%20desconto%20na%20conta%20de%20energia." target="_blank" class="btn btn-primary nav-btn btn-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+          Falar com a Sol
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
+          Energia Solar por Assinatura
+        </div>
+        <h1>Até <span>25% de desconto</span> fixo na sua conta de luz, sem obras.</h1>
+        <p class="hero-desc">Conecte-se a usinas solares compartilhadas da Desconto Sollar. Sem custos de instalação, sem obras e sem complicação. Receba suporte imediato da <strong>Sol</strong>, nossa consultora de IA no WhatsApp.</p>
+        
+        <div class="hero-ctas">
+          <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Quero%20simular%20meu%20desconto%20na%20conta%20de%20energia." target="_blank" class="btn btn-primary btn-icon" id="hero-cta-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+            Falar com a Sol no WhatsApp
+          </a>
+          <a href="#calculadora" class="btn btn-accent">Fazer Simulação Online</a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>25%</h4>
+            <p>Desconto Fixo</p>
+          </div>
+          <div class="stat-item border-left">
+            <h4>0%</h4>
+            <p>Custo de Instalação</p>
+          </div>
+          <div class="stat-item border-left">
+            <h4>24/7</h4>
+            <p>Atendimento</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="proposal-card-mockup">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="mockup-title">Proposta Digital Sollar</span>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-brand">Desconto <span>Sollar</span></div>
+            <div class="mockup-client">
+              <span class="lbl">Simulação para</span>
+              <strong>Proprietário Comercial / Residencial</strong>
+            </div>
+            <div class="mockup-divider"></div>
+            <div class="mockup-row">
+              <span>Consumo Médio</span>
+              <span>550 kWh</span>
+            </div>
+            <div class="mockup-row">
+              <span>Desconto Aplicado</span>
+              <span class="badge-discount">-25%</span>
+            </div>
+            <div class="mockup-row highlight-green">
+              <span>Economia Mensal</span>
+              <strong>R$ 137,50</strong>
+            </div>
+            <div class="mockup-row highlight-blue">
+              <span>Economia Anual</span>
+              <strong>R$ 1.650,00</strong>
+            </div>
+            <div class="mockup-footer">
+              <div class="badge-certified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Homologado ANEEL
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating active element -->
+        <div class="whatsapp-bubble-preview">
+          <div class="wp-header">
+            <div class="wp-avatar">S</div>
+            <div class="wp-info">
+              <strong>Sol</strong>
+              <span>Online • Consultora IA</span>
+            </div>
+          </div>
+          <div class="wp-message">
+            Olá! Sou a Sol. Em 2 minutos gero sua proposta de desconto no WhatsApp! ☀️
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION (COMO FUNCIONA - CARDS) -->
+  <section id="como-funciona" class="benefits-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="subtitle">Sem Burocracia</span>
+        <h2>Acesso à energia solar de forma inteligente</h2>
+        <p>A assinatura de energia solar conecta você diretamente à energia limpa produzida em nossas usinas solares parceiras, sem alterar nada na sua rotina.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M12 2v20M9 5H5a2 2 0 0 0-2 2v3m16 0V7a2 2 0 0 0-2-2h-4"/></svg>
+          </div>
+          <h3>Sem Obras ou Painéis</h3>
+          <p>Esqueça furos no telhado, obras complexas ou compra de equipamentos caros. O processo é 100% digital e a energia solar vem das usinas compartilhadas da Desconto Sollar.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><line x1="12" y1="4" x2="12" y2="20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3>Economia Garantida</h3>
+          <p>Garanta <strong>25%</strong> de desconto fixo todo mês na tarifa de energia compensada da CEMIG. Sua conta total sempre será menor.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Livre de Investimento</h3>
+          <p>O custo para aderir ao programa é <strong>R$ 0,00</strong>. Você não paga taxa de adesão, mensalidade ou taxa de manutenção. É só assinar e começar a economizar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <section id="calculadora" class="calculator-section">
+    <div class="container">
+      <div class="calculator-grid">
+        <div class="calculator-text">
+          <span class="subtitle">Simulação Rápida</span>
+          <h2>Calcule sua economia em segundos</h2>
+          <p>Aproveite nossa usina solar sem investir um único centavo. Insira o valor médio da sua conta de luz mensal da CEMIG abaixo para ver quanto dinheiro fica no seu bolso.</p>
+          
+          <div class="calculator-info-box">
+            <h4>Como as faturas funcionam?</h4>
+            <p>Você continuará recebendo a conta da CEMIG (com o desconto inserido na forma de créditos) e também receberá a fatura da Desconto Sollar com a cobrança da usina solar. A soma das duas faturas será sempre <strong>menor</strong> do que a sua conta de luz atual.</p>
+          </div>
+        </div>
+
+        <div class="calculator-card" id="calc-container">
+          <div class="calc-inputs">
+            <div class="input-group">
+              <label for="calc-bill-value">Valor médio da conta de luz atual (R$)</label>
+              <div class="input-prefix-wrapper">
+                <input type="text" id="calc-bill-value" value="R$ 500,00" placeholder="Ex: R$ 500,00">
+              </div>
+              <input type="range" id="calc-bill-slider" min="0" max="1000" step="1" value="246">
+              <div class="slider-labels">
+                <span>R$ 150</span>
+                <span>R$ 20.000</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label>Percentual de Desconto</label>
+              <div class="discount-badge-display">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
+                <span><strong>25% de Desconto Fixo</strong> — Aplicado automaticamente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <div class="results-header">Resultados Estimados</div>
+            <div class="results-grid">
+              <div class="result-box highlighted">
+                <span class="res-label">Sua Economia Mensal</span>
+                <div class="res-val" id="res-monthly-savings">R$ 125,00</div>
+              </div>
+              <div class="result-box highlighted">
+                <span class="res-label">Sua Economia Anual</span>
+                <div class="res-val" id="res-annual-savings" style="color: #25D366;">R$ 1.500,00</div>
+              </div>
+              <div class="result-box">
+                <span class="res-label">Nova Fatura Estimada</span>
+                <div class="res-val" id="res-new-bill" style="font-size: 1.25rem;">R$ 375,00</div>
+                <span class="res-sub">CEMIG + Desconto Sollar</span>
+              </div>
+            </div>
+            
+            <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Simulei%20no%20site%20uma%20conta%20de%20R$%20500%20e%20quero%20o%20desconto%20de%2025%25." target="_blank" class="btn btn-accent btn-full btn-icon" id="calc-cta-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+              Garantir Desconto com a Sol
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP BY STEP SECTION -->
+  <section id="como-funciona-passos" class="how-it-works-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="subtitle">Passo a Passo</span>
+        <h2>Como funciona a adesão?</h2>
+        <p>Do primeiro contato até o desconto ativo na sua fatura, tudo acontece de forma automatizada e monitorada.</p>
+      </div>
+
+      <div class="steps-flow">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Simulação & Atendimento</h3>
+          <p>Você inicia a conversa com a <strong>Sol</strong> no WhatsApp. Ela coleta seu nome, solicita uma foto ou PDF da sua conta de energia atual (ou apenas a média em kWh/reais) e gera sua proposta.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Proposta & Assinatura</h3>
+          <p>A Sol gera instantaneamente uma proposta em PDF personalizada. Se você concordar, ela solicita os documentos de adesão (RG/CNH e conta de energia) e envia tudo para nossa equipe comercial.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Ativação do Desconto</h3>
+          <p>Após a assinatura do contrato, a Desconto Sollar cuida de toda a burocracia junto à CEMIG. Em <strong>1 a 3 meses</strong>, o desconto começa a aparecer na sua conta. Sem fidelidade mínima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOL AI CHATBOT DEMO SECTION -->
+  <section id="sol" class="sol-section">
+    <div class="container sol-grid">
+      <div class="sol-image">
+        <div class="chat-mockup-wrapper">
+          <div class="chat-header">
+            <div class="chat-avatar"></div>
+            <div class="chat-status-info">
+              <strong>Sol — Desconto Sollar</strong>
+              <span>Online • Consultora Virtual</span>
+            </div>
+            <div class="chat-actions-svg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+            </div>
+          </div>
+          <div class="chat-body" id="chat-body-animation">
+            <!-- Messages animated via JS -->
+            <div class="msg received">
+              Olá! Sou a Sol, consultora comercial de inteligência artificial da Desconto Sollar. Quer economizar até 25% na sua conta de luz sem gastar nada com obras?
+            </div>
+            <div class="msg sent">
+              Sim! Quero economizar. Como funciona?
+            </div>
+            <div class="msg received">
+              Excelente escolha! É super simples. Por favor, me envie uma foto ou PDF da sua última conta de luz da CEMIG, ou me diga o valor médio que você paga.
+            </div>
+            <div class="msg sent">
+              Minha conta média é de R$ 500.
+            </div>
+            <div class="msg received">
+              Perfeito! Com seu consumo, você economizará R$ 125 por mês — isso representa R$ 1.500 de economia por ano! Vamos gerar sua proposta personalizada?
+            </div>
+            <div class="msg received typing">
+              <span class="dot-typing"></span>
+              <span class="dot-typing"></span>
+              <span class="dot-typing"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sol-text">
+        <span class="subtitle">Atendimento Inteligente</span>
+        <h2>Conheça a Sol: Sua Consultora Virtual</h2>
+        <p>A Sol é o motor de atendimento da Desconto Sollar. Desenvolvida com tecnologia de ponta, ela orienta você do primeiro contato ao envio de documentos sem complicação.</p>
+        
+        <ul class="sol-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>Simulação Instantânea:</strong> Processamento rápido de dados para gerar sua proposta em segundos.
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>Atendimento 24h:</strong> Tire suas dúvidas a qualquer hora do dia ou da noite pelo WhatsApp.
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>Seguro e sem Burocracia:</strong> Seus dados e documentos são protegidos e enviados diretamente à nossa equipe de homologação.
+          </li>
+        </ul>
+        
+        <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Quero%20fazer%20minha%20ades%C3%A3o%20na%20Desconto%20Sollar." target="_blank" class="btn btn-primary btn-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+          Falar com a Sol no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="subtitle">Dúvidas Frequentes</span>
+        <h2>Perguntas frequentes sobre o programa</h2>
+        <p>Esclarecemos os principais questionamentos sobre o desconto e o funcionamento das faturas.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Preciso realizar alguma obra ou alteração na minha casa/comércio?</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não, nenhuma obra é realizada no seu imóvel. Você continuará utilizando a mesma rede de energia da CEMIG e os mesmos medidores. A economia acontece porque nós injetamos na rede de energia a produção solar da nossa usina parceira, e essa energia é convertida em créditos de desconto na sua conta.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Por que recebo duas faturas diferentes e como funciona o pagamento?</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Você continuará recebendo a conta tradicional da <strong>CEMIG</strong>, porém nela haverá a discriminação dos créditos de energia solar injetados pela Desconto Sollar (que abatem o valor total). Além disso, você receberá a fatura da <strong>Desconto Sollar</strong>, referente ao aluguel da usina de energia solar com o desconto aplicado (25%). A soma das duas faturas será <strong>sempre menor</strong> do que a sua conta de luz antiga, garantindo a sua economia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Qual o prazo para o desconto começar a aparecer na minha conta CEMIG?</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O prazo para homologação e ativação dos créditos junto à distribuidora varia de <strong>1 a 3 meses</strong> após a assinatura digital do termo de adesão. A partir deste prazo, o desconto passa a vir mensalmente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O programa de desconto tem fidelidade? Como funciona o cancelamento?</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não, o programa da Desconto Sollar <strong>não possui fidelidade ou período mínimo de carência</strong>. Você pode solicitar o cancelamento a qualquer momento sem custos. Solicitamos apenas que o cancelamento seja comunicado com <strong>90 dias de antecedência</strong>, que é o prazo operacional necessário para a distribuidora (CEMIG) desvincular o seu cadastro.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>E se as usinas parceiras produzirem menos energia em algum mês? Corro risco de ficar sem luz?</span>
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não há risco de desabastecimento de energia. O fornecimento físico de energia e a manutenção da rede continuam sendo de inteira responsabilidade da CEMIG. Se as usinas gerarem menos créditos num determinado período, a CEMIG complementará o fornecimento normalmente e a fatura da Desconto Sollar será proporcionalmente menor. Se houver sobra de créditos, eles ficam acumulados para desconto nas faturas seguintes por até 60 meses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contato" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-text">
+        <span class="subtitle">Contato Alternativo</span>
+        <h2>Ainda prefere o contato via e-mail?</h2>
+        <p>O preenchimento do formulário é recomendado apenas caso você não consiga utilizar o WhatsApp no momento. O atendimento automatizado da <strong>Sol</strong> pelo celular resolve tudo em menos de 2 minutos, sem que você precise esperar o retorno da equipe comercial.</p>
+        
+        <div class="contact-highlight-whatsapp flex-column-whatsapp">
+          <h3 style="font-size: 1.1rem; color: var(--primary-esc); margin-bottom: 10px;">Recomendado: Ativação Imediata</h3>
+          <p style="font-size: 0.88rem; color: var(--texto-sub); margin-bottom: 20px;">Evite filas e burocracia. Fale com a Sol e conclua sua simulação de forma 100% digital e sem espera.</p>
+          <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Quero%20economizar%20na%20minha%20conta%20de%20energia." target="_blank" class="btn btn-whatsapp btn-icon btn-full">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+            Chamar a Sol no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <form id="lead-form">
+          <div class="form-group">
+            <label for="lead-name">Nome Completo</label>
+            <input type="text" id="lead-name" required placeholder="Ex: João da Silva">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="lead-phone">WhatsApp / Celular</label>
+              <input type="tel" id="lead-phone" required placeholder="Ex: (31) 99999-9999">
+            </div>
+            <div class="form-group">
+              <label for="lead-email">E-mail</label>
+              <input type="email" id="lead-email" required placeholder="Ex: joao@email.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lead-bill">Valor médio da Conta (R$)</label>
+            <input type="number" id="lead-bill" required min="150" step="any" placeholder="Ex: 500">
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-full btn-submit" id="btn-submit-lead">
+            <span class="btn-text">Enviar Dados de Simulação</span>
+            <span class="btn-spinner hidden">
+              <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+            </span>
+          </button>
+        </form>
+
+        <!-- Form Success State Overlay -->
+        <div class="form-success-overlay hidden" id="form-success-screen">
+          <div class="success-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Simulação Enviada!</h3>
+          <p>Seus dados foram processados com sucesso. Nossa equipe entrará em contato em breve no seu celular cadastrado.</p>
+          <button class="btn btn-secondary" id="btn-reset-form">Enviar Outro</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text" style="color: var(--branco); display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Main Diagonal Bar (White) -->
+            <line x1="22" y1="78" x2="78" y2="22" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+            <!-- Top-Left Diagonal Bar (Orange) -->
+            <line x1="22" y1="22" x2="38" y2="38" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+            <!-- Bottom-Right Diagonal Bar (Orange) -->
+            <line x1="62" y1="62" x2="78" y2="78" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+            <!-- Left Horizontal Bar (Orange) -->
+            <line x1="12" y1="50" x2="28" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+            <!-- Right Horizontal Bar (Orange) -->
+            <line x1="72" y1="50" x2="88" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
+            <!-- Top Circle (White) -->
+            <circle cx="50" cy="18" r="9" fill="#FFFFFF" />
+            <!-- Bottom Circle (White) -->
+            <circle cx="50" cy="82" r="9" fill="#FFFFFF" />
+          </svg>
+          Desconto<span style="color: var(--accent); opacity: 1;">Sollar</span>
+        </div>
+        <p>A Desconto Sollar é especialista em soluções de energia, oferecendo projetos personalizados com descontos exclusivos. Nossa missão é tornar a energia mais acessível a todos.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#">Início</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#calculadora">Calculadora de Economia</a>
+        <a href="#sol">A Sol IA</a>
+        <a href="#faq">Perguntas Frequentes</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Regulação e Termos</h4>
+        <p>Serviço regulamentado pela ANEEL em conformidade com as Resoluções Normativas 482/2012 e 687/2015.</p>
+        <p class="highlight-text">Sem fidelidade mínima contratual.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <span>© 2026 Desconto Sollar. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/553184035604?text=Ol%C3%A1%20Sol!%20Achei%20voc%C3%AA%20no%20site%20da%20Desconto%20Sollar%20e%20gostaria%20de%20reduzir%20minha%20conta%20de%20luz." class="floating-whatsapp-btn" id="whatsapp-floating-bubble" target="_blank" aria-label="Chamar Sol no WhatsApp">
+    <span class="tooltip">Fale com a Sol!</span>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+  </a>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    /**
+     * Desconto Sollar - Script de Lógica e Interações da Landing Page
+     */
+
+    // E-mail de destino para recebimento dos leads (serviço gratuito FormSubmit)
+    const DESTINATION_EMAIL = 'gfmattos2@gmail.com';
+
+    // Número do WhatsApp oficial da Sol
+    const SOL_WHATSAPP_NUMBER = '553184035604';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavbar();
+      initCalculator();
+      initFAQ();
+      initLeadForm();
+      initChatMockupAnimation();
+    });
+
+    // ==========================================
+    // 1. HEADER & NAVBAR MOBILE
+    // ==========================================
+    function initNavbar() {
+      const navbar = document.querySelector('.navbar');
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.classList.toggle('open');
+        navMenu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        menuToggle.setAttribute('aria-label', isOpen ? 'Fechar Menu' : 'Abrir Menu');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      // Target all links inside the nav-menu (including the CTA button)
+      const menuLinks = navMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.classList.remove('open');
+          navMenu.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', false);
+          menuToggle.setAttribute('aria-label', 'Abrir Menu');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // ==========================================
+    // 2. CALCULADORA DE ECONOMIA INTERATIVA
+    // ==========================================
+    function initCalculator() {
+      const billInput = document.getElementById('calc-bill-value');
+      const billSlider = document.getElementById('calc-bill-slider');
+      const resMonthlySavings = document.getElementById('res-monthly-savings');
+      const resAnnualSavings = document.getElementById('res-annual-savings');
+      const resNewBill = document.getElementById('res-new-bill');
+      const calcCtaWhatsapp = document.getElementById('calc-cta-whatsapp');
+
+      const MIN_VAL = 150;
+      const MAX_VAL = 20000;
+      const k = Math.log(MAX_VAL / MIN_VAL);
+
+      const sliderToValue = (s) => {
+        const rawVal = MIN_VAL * Math.exp((s / 1000) * k);
+        if (rawVal < 1000) {
+          return Math.round(rawVal / 10) * 10;
+        } else if (rawVal < 5000) {
+          return Math.round(rawVal / 50) * 50;
+        } else {
+          return Math.round(rawVal / 100) * 100;
+        }
+      };
+
+      const valueToSlider = (v) => {
+        if (v < MIN_VAL) v = MIN_VAL;
+        if (v > MAX_VAL) v = MAX_VAL;
+        return (Math.log(v / MIN_VAL) / k) * 1000;
+      };
+
+      const formatBRL = (value) => {
+        return new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'BRL'
+        }).format(value);
+      };
+
+      const parseBRL = (str) => {
+        let raw = str.trim();
+        const hasComma = raw.includes(',');
+        const hasDot = raw.includes('.');
+        
+        if (hasDot && !hasComma) {
+          const parts = raw.split('.');
+          const lastPart = parts[parts.length - 1];
+          if (lastPart.length !== 3) {
+            raw = raw.replace(/\./g, ',');
+          }
+        }
+        
+        const clean = raw.replace(/[^\d,]/g, '').replace(',', '.');
+        const val = parseFloat(clean);
+        return isNaN(val) ? 0 : val;
+      };
+
+      const calculate = (customVal) => {
+        let billValue = (customVal !== undefined) ? customVal : parseBRL(billInput.value);
+
+        if (isNaN(billValue) || billValue < 0) {
+          billValue = 0;
+        }
+
+        const discountRate = 0.25;
+        const monthlySavings = billValue * discountRate;
+        const annualSavings = monthlySavings * 12;
+        const newBill = billValue - monthlySavings;
+
+        resMonthlySavings.textContent = formatBRL(monthlySavings);
+        resAnnualSavings.textContent = formatBRL(annualSavings);
+        resNewBill.textContent = formatBRL(newBill);
+
+        updateWhatsappCta(billValue, monthlySavings, annualSavings);
+      };
+
+      const updateWhatsappCta = (bill, monthly, annual) => {
+        const formattedBill = formatBRL(bill);
+        const formattedMonthly = formatBRL(monthly);
+        const formattedAnnual = formatBRL(annual);
+        
+        const baseMessage = `Olá Sol! Simulei no site da Desconto Sollar. Minha conta média é de ${formattedBill}. Vi que posso economizar ${formattedMonthly} por mês (${formattedAnnual} por ano) com o desconto fixo de 25%. Quero garantir essa economia!`;
+        const encodedMessage = encodeURIComponent(baseMessage);
+        
+        calcCtaWhatsapp.href = `https://wa.me/${SOL_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+      };
+
+      // Focus behavior: format as clean localized text with commas (e.g. 500 or 500,5)
+      billInput.addEventListener('focus', () => {
+        const val = parseBRL(billInput.value);
+        if (val > 0) {
+          billInput.value = val.toString().replace('.', ',');
+        } else {
+          billInput.value = '';
+        }
+      });
+
+      // While typing, parse and update slider + results
+      billInput.addEventListener('input', () => {
+        let val = parseBRL(billInput.value);
+        if (val > 0) {
+          if (val > MAX_VAL) val = MAX_VAL;
+          billSlider.value = valueToSlider(val);
+          calculate(val);
+        } else {
+          calculate(0);
+        }
+      });
+
+      // On blur, clamp, format as currency BRL and sync slider + calculations
+      billInput.addEventListener('blur', () => {
+        let val = parseBRL(billInput.value);
+        if (isNaN(val) || val < MIN_VAL) val = MIN_VAL;
+        if (val > MAX_VAL) val = MAX_VAL;
+        billInput.value = formatBRL(val);
+        billSlider.value = valueToSlider(val);
+        calculate(val);
+      });
+
+      // Slider updates text input and runs calculations
+      billSlider.addEventListener('input', () => {
+        const val = sliderToValue(parseFloat(billSlider.value));
+        billInput.value = formatBRL(val);
+        calculate(val);
+      });
+
+      // Initialize on load and sync slider position
+      const initialVal = parseBRL(billInput.value);
+      billInput.value = formatBRL(initialVal);
+      billSlider.value = valueToSlider(initialVal);
+      calculate(initialVal);
+    }
+
+    // ==========================================
+    // 3. FAQ ACCORDION DINÂMICO
+    // ==========================================
+    function initFAQ() {
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const questionButton = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        questionButton.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          faqItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          } else {
+            answer.style.maxHeight = '0px';
+          }
+        });
+      });
+    }
+
+    // ==========================================
+    // 4. FORMULÁRIO DE CAPTURA
+    // ==========================================
+    function initLeadForm() {
+      const form = document.getElementById('lead-form');
+      const btnSubmit = document.getElementById('btn-submit-lead');
+      const btnText = btnSubmit.querySelector('.btn-text');
+      const btnSpinner = btnSubmit.querySelector('.btn-spinner');
+      const successOverlay = document.getElementById('form-success-screen');
+      const btnReset = document.getElementById('btn-reset-form');
+      const phoneInput = document.getElementById('lead-phone');
+
+      // Live Brazilian phone mask implementation
+      phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 11) value = value.slice(0, 11);
+        
+        if (value.length > 10) {
+          e.target.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+        } else if (value.length > 5) {
+          e.target.value = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6)}`;
+        } else if (value.length > 2) {
+          e.target.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+        } else if (value.length > 0) {
+          e.target.value = `(${value}`;
+        } else {
+          e.target.value = '';
+        }
+      });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('lead-name').value;
+        const phone = document.getElementById('lead-phone').value;
+        const email = document.getElementById('lead-email').value;
+        const averageBill = parseFloat(document.getElementById('lead-bill').value);
+
+        // Loading State
+        btnSubmit.disabled = true;
+        btnText.style.opacity = '0.3';
+        btnSpinner.classList.remove('hidden');
+
+        // Payload structure for FormSubmit
+        const emailPayload = {
+          "Nome Completo": name,
+          "WhatsApp / Celular": phone,
+          "E-mail": email,
+          "Conta Média (R$)": `R$ ${averageBill}`,
+          "_subject": `Novo Lead de Energia Solar - ${name}`,
+          "_template": "table",
+          "_captcha": "false"
+        };
+
+        try {
+          const response = await fetch(`https://formsubmit.co/ajax/${DESTINATION_EMAIL}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(emailPayload)
+          });
+
+          const result = await response.json();
+
+          // Safe check for both string "true" and boolean true success status
+          if (response.ok && (result.success === "true" || result.success === true)) {
+            showSuccessState();
+          } else {
+            throw new Error(result.message || 'Erro na resposta do servidor.');
+          }
+        } catch (error) {
+          console.error('Erro ao enviar e-mail:', error);
+          alert('Ocorreu um erro ao processar sua simulação. Por favor, tente falar direto com a Sol no WhatsApp clicando no botão flutuante!');
+          
+          btnSubmit.disabled = false;
+          btnText.style.opacity = '1';
+          btnSpinner.classList.add('hidden');
+        }
+      });
+
+      btnReset.addEventListener('click', () => {
+        form.reset();
+        successOverlay.classList.add('hidden');
+        btnSubmit.disabled = false;
+        btnText.style.opacity = '1';
+        btnSpinner.classList.add('hidden');
+      });
+
+      function showSuccessState() {
+        successOverlay.classList.remove('hidden');
+      }
+    }
+
+    // ==========================================
+    // 5. ANIMAÇÃO DE SIMULAÇÃO DE CHAT DA SOL
+    // ==========================================
+    function initChatMockupAnimation() {
+      const chatBody = document.getElementById('chat-body-animation');
+      if (!chatBody) return;
+
+      const messagesData = [
+        { type: 'received', text: 'Olá! Sou a Sol, consultora comercial de inteligência artificial da Desconto Sollar. Quer economizar até 25% na sua conta de luz sem gastar nada com obras?' },
+        { type: 'sent', text: 'Sim! Quero economizar. Como funciona?' },
+        { type: 'received', text: 'Excelente escolha! É super simples. Por favor, me envie uma foto ou PDF da sua última conta de luz da CEMIG, ou me diga o valor médio que você paga.' },
+        { type: 'sent', text: 'Minha conta média é de R$ 500.' },
+        { type: 'received', text: 'Perfeito! Com seu consumo, você economizará R$ 125 por mês — isso representa R$ 1.500 de economia por ano! Vamos gerar sua proposta personalizada?' }
+      ];
+
+      let currentStep = 0;
+
+      function runSimulation() {
+        chatBody.innerHTML = '';
+        currentStep = 0;
+        typeNextMessage();
+      }
+
+      function typeNextMessage() {
+        if (currentStep >= messagesData.length) {
+          setTimeout(runSimulation, 8000);
+          return;
+        }
+
+        const currentMsg = messagesData[currentStep];
+
+        if (currentMsg.type === 'received') {
+          const typingIndicator = document.createElement('div');
+          typingIndicator.className = 'msg received typing';
+          typingIndicator.innerHTML = `
+            <span class="dot-typing"></span>
+            <span class="dot-typing"></span>
+            <span class="dot-typing"></span>
+          `;
+          chatBody.appendChild(typingIndicator);
+          chatBody.scrollTop = chatBody.scrollHeight;
+
+          setTimeout(() => {
+            typingIndicator.remove();
+            addTextMessage(currentMsg.type, currentMsg.text);
+            currentStep++;
+            setTimeout(typeNextMessage, 1500);
+          }, 2000);
+
+        } else {
+          setTimeout(() => {
+            addTextMessage(currentMsg.type, currentMsg.text);
+            currentStep++;
+            setTimeout(typeNextMessage, 1000);
+          }, 1000);
+        }
+      }
+
+      function addTextMessage(type, text) {
+        const msgElement = document.createElement('div');
+        msgElement.className = `msg ${type}`;
+        msgElement.textContent = text;
+        chatBody.appendChild(msgElement);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+
+      runSimulation();
+    }
+  </script>
+</body>
+</html>
+
