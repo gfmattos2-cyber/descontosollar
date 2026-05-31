@@ -21,6 +21,7 @@
   <meta property="og:description" content="Economize até 25% na sua fatura da CEMIG de forma simples, 100% digital e sem investimentos. Conheça a Sol, nossa consultora virtual.">
   
   <title>Desconto Sollar | Economia de Energia Solar por Assinatura</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' fill='none'><g transform='translate(150, 150)'><line x1='-80' y1='80' x2='80' y2='-80' stroke='%23258887' stroke-width='24' stroke-linecap='round' /><line x1='-72' y1='-72' x2='-36' y2='-36' stroke='%23D85C03' stroke-width='24' stroke-linecap='round' /><line x1='36' y1='36' x2='72' y2='72' stroke='%23D85C03' stroke-width='24' stroke-linecap='round' /><line x1='-102' y1='0' x2='-66' y2='0' stroke='%23D85C03' stroke-width='24' stroke-linecap='round' /><line x1='66' y1='0' x2='102' y2='0' stroke='%23D85C03' stroke-width='24' stroke-linecap='round' /><circle cx='0' cy='-94' r='20' fill='%23258887' /><circle cx='0' cy='94' r='20' fill='%23258887' /></g></svg>">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,14 +32,14 @@
     /* ── DESIGN SYSTEM & VARIÁVEIS ── */
     :root {
       /* Paleta Oficial Desconto Sollar */
-      --primary:        #459395;
-      --primary-esc:    #2E6769;
-      --primary-claro:  #EBF4F4;
-      --primary-mid:    #50A4A6;
-      --accent:         #E3803B;
-      --accent-esc:     #C76722;
-      --accent-claro:   #FDF0E9;
-      --accent-glow:    rgba(227, 128, 59, 0.12);
+      --primary:        #258887;
+      --primary-esc:    #1b6261;
+      --primary-claro:  #e9f3f3;
+      --primary-mid:    #2b9897;
+      --accent:         #D85C03;
+      --accent-esc:     #aa4902;
+      --accent-claro:   #fcf1e6;
+      --accent-glow:    rgba(216, 92, 3, 0.12);
       
       --cinza-bg:       #F5F7FA;
       --cinza-borda:    #E2E8F0;
@@ -51,9 +52,9 @@
       --header-height:  80px;
       --border-radius:  16px;
       --transition:     all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --shadow-sm:      0 2px 8px rgba(69, 147, 149, 0.05);
-      --shadow-md:      0 10px 30px rgba(69, 147, 149, 0.08);
-      --shadow-lg:      0 20px 45px rgba(46, 103, 105, 0.12);
+      --shadow-sm:      0 2px 8px rgba(37, 136, 135, 0.05);
+      --shadow-md:      0 10px 30px rgba(37, 136, 135, 0.08);
+      --shadow-lg:      0 20px 45px rgba(27, 98, 97, 0.12);
       --glass-bg:       rgba(255, 255, 255, 0.75);
       --glass-border:   rgba(226, 232, 240, 0.5);
     }
@@ -132,19 +133,19 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
       color: var(--branco);
-      box-shadow: 0 4px 15px rgba(38, 125, 125, 0.3);
+      box-shadow: 0 4px 15px rgba(37, 136, 135, 0.3);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(38, 125, 125, 0.45);
+      box-shadow: 0 6px 20px rgba(37, 136, 135, 0.45);
       background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary) 100%);
     }
 
     .btn-secondary {
       background-color: var(--primary-claro);
       color: var(--primary-esc);
-      border: 1.5px solid rgba(38, 125, 125, 0.2);
+      border: 1.5px solid rgba(37, 136, 135, 0.2);
     }
 
     .btn-secondary:hover {
@@ -158,12 +159,12 @@
     .btn-accent {
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent-esc) 100%);
       color: var(--branco);
-      box-shadow: 0 4px 15px rgba(217, 95, 26, 0.3);
+      box-shadow: 0 4px 15px rgba(216, 92, 3, 0.3);
     }
 
     .btn-accent:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(217, 95, 26, 0.45);
+      box-shadow: 0 6px 20px rgba(216, 92, 3, 0.45);
       background: linear-gradient(135deg, var(--accent-esc) 0%, var(--accent) 100%);
     }
 
@@ -224,7 +225,7 @@
       background-color: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(38, 125, 125, 0.1);
+      border-bottom: 1px solid rgba(37, 136, 135, 0.1);
       z-index: 1000;
       display: flex;
       align-items: center;
@@ -329,7 +330,7 @@
       position: relative;
       padding-top: calc(var(--header-height) + 60px);
       padding-bottom: 80px;
-      background: radial-gradient(circle at 10% 20%, rgba(235, 244, 244, 0.4) 0%, rgba(255, 255, 255, 1) 90%);
+      background: radial-gradient(circle at 10% 20%, rgba(233, 243, 243, 0.4) 0%, rgba(255, 255, 255, 1) 90%);
       overflow: hidden;
     }
 
@@ -340,7 +341,7 @@
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(38, 125, 125, 0.08) 0%, rgba(255,255,255,0) 70%);
+      background: radial-gradient(circle, rgba(37, 136, 135, 0.08) 0%, rgba(255,255,255,0) 70%);
       z-index: 0;
       pointer-events: none;
     }
@@ -359,7 +360,7 @@
       align-items: center;
       gap: 8px;
       background-color: var(--primary-claro);
-      border: 1px solid rgba(38, 125, 125, 0.2);
+      border: 1px solid rgba(37, 136, 135, 0.2);
       color: var(--primary-esc);
       font-weight: 700;
       font-size: 0.72rem;
@@ -528,7 +529,7 @@
     }
 
     .mockup-row.highlight-green {
-      background-color: rgba(38, 125, 125, 0.08);
+      background-color: rgba(37, 136, 135, 0.08);
       padding: 8px 12px;
       border-radius: 8px;
       color: var(--texto);
@@ -696,7 +697,7 @@
 
     .benefit-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(38, 125, 125, 0.3);
+      border-color: rgba(37, 136, 135, 0.3);
       box-shadow: var(--shadow-md);
       background-color: var(--branco);
     }
@@ -852,7 +853,7 @@
       background: var(--primary);
       cursor: pointer;
       border: 2px solid var(--branco);
-      box-shadow: 0 2px 6px rgba(38, 125, 125, 0.3);
+      box-shadow: 0 2px 6px rgba(37, 136, 135, 0.3);
       transition: var(--transition);
     }
 
@@ -875,7 +876,7 @@
       align-items: center;
       gap: 10px;
       background-color: var(--accent-claro);
-      border: 1px solid rgba(217, 95, 26, 0.2);
+      border: 1px solid rgba(216, 92, 3, 0.2);
       color: var(--accent-esc);
       padding: 14px 18px;
       border-radius: 12px;
@@ -885,6 +886,70 @@
     .discount-badge-display svg {
       color: var(--accent);
       flex-shrink: 0;
+    }
+
+    /* Selector for grid connection phase */
+    .phase-selector {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .phase-btn {
+      background-color: var(--cinza-bg);
+      border: 1.5px solid var(--cinza-borda);
+      border-radius: 12px;
+      padding: 10px 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .phase-btn:hover {
+      border-color: var(--primary-mid);
+      background-color: var(--primary-claro);
+    }
+
+    .phase-btn.active {
+      border-color: var(--primary);
+      background-color: var(--primary-claro);
+      box-shadow: 0 4px 12px rgba(37, 136, 135, 0.15);
+    }
+
+    .phase-title {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--primary-esc);
+      display: block;
+    }
+
+    .phase-desc {
+      font-size: 0.68rem;
+      color: var(--texto-sub);
+      margin-top: 2px;
+      display: block;
+    }
+
+    .phase-btn.active .phase-title {
+      color: var(--primary-esc);
+    }
+
+    .phase-btn.active .phase-desc {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .calc-subtext {
+      font-size: 0.72rem;
+      color: var(--texto-sub);
+      display: block;
+      margin-top: 6px;
+      line-height: 1.4;
     }
 
     /* Results box in calculator */
@@ -1208,7 +1273,7 @@
     }
 
     .faq-item:hover {
-      border-color: rgba(38, 125, 125, 0.25);
+      border-color: rgba(37, 136, 135, 0.25);
       background-color: var(--branco);
     }
 
@@ -1761,21 +1826,19 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="#" class="logo-link" id="nav-logo">
-        <svg class="logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
-          <!-- Main Diagonal Bar (Teal) -->
-          <line x1="22" y1="78" x2="78" y2="22" stroke="#459395" stroke-width="12" stroke-linecap="round" />
-          <!-- Top-Left Diagonal Bar (Orange) -->
-          <line x1="22" y1="22" x2="38" y2="38" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-          <!-- Bottom-Right Diagonal Bar (Orange) -->
-          <line x1="62" y1="62" x2="78" y2="78" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-          <!-- Left Horizontal Bar (Orange) -->
-          <line x1="12" y1="50" x2="28" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-          <!-- Right Horizontal Bar (Orange) -->
-          <line x1="72" y1="50" x2="88" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-          <!-- Top Circle (Teal) -->
-          <circle cx="50" cy="18" r="9" fill="#459395" />
-          <!-- Bottom Circle (Teal) -->
-          <circle cx="50" cy="82" r="9" fill="#459395" />
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+          <g transform="translate(150, 150)">
+            <!-- Diagonal principal (Teal) -->
+            <line x1="-80" y1="80" x2="80" y2="-80" stroke="#258887" stroke-width="24" stroke-linecap="round" />
+            <!-- Raios solares (Laranja) -->
+            <line x1="-72" y1="-72" x2="-36" y2="-36" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="36" y1="36" x2="72" y2="72" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="-102" y1="0" x2="-66" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="66" y1="0" x2="102" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <!-- Círculos (Teal) -->
+            <circle cx="0" cy="-94" r="20" fill="#258887" />
+            <circle cx="0" cy="94" r="20" fill="#258887" />
+          </g>
         </svg>
         <div class="logo-text">Desconto<span>Sollar</span></div>
       </a>
@@ -1963,6 +2026,25 @@
             </div>
 
             <div class="input-group">
+              <label>Tipo de Conexão (Fase da Rede)</label>
+              <div class="phase-selector">
+                <button type="button" class="phase-btn" data-kwh="30" id="phase-mono">
+                  <span class="phase-title">Monofásico</span>
+                  <span class="phase-desc">Mínimo 30 kWh</span>
+                </button>
+                <button type="button" class="phase-btn" data-kwh="50" id="phase-bi">
+                  <span class="phase-title">Bifásico</span>
+                  <span class="phase-desc">Mínimo 50 kWh</span>
+                </button>
+                <button type="button" class="phase-btn active" data-kwh="100" id="phase-tri">
+                  <span class="phase-title">Trifásico</span>
+                  <span class="phase-desc">Mínimo 100 kWh</span>
+                </button>
+              </div>
+              <span class="calc-subtext">* O custo de disponibilidade (taxa mínima obrigatória da CEMIG) não gera desconto solar.</span>
+            </div>
+
+            <div class="input-group">
               <label>Percentual de Desconto</label>
               <div class="discount-badge-display">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
@@ -1976,15 +2058,15 @@
             <div class="results-grid">
               <div class="result-box highlighted">
                 <span class="res-label">Sua Economia Mensal</span>
-                <div class="res-val" id="res-monthly-savings">R$ 125,00</div>
+                <div class="res-val" id="res-monthly-savings">R$ 101,25</div>
               </div>
               <div class="result-box highlighted">
                 <span class="res-label">Sua Economia Anual</span>
-                <div class="res-val" id="res-annual-savings" style="color: #25D366;">R$ 1.500,00</div>
+                <div class="res-val" id="res-annual-savings" style="color: #25D366;">R$ 1.215,00</div>
               </div>
               <div class="result-box">
                 <span class="res-label">Nova Fatura Estimada</span>
-                <div class="res-val" id="res-new-bill" style="font-size: 1.25rem;">R$ 375,00</div>
+                <div class="res-val" id="res-new-bill" style="font-size: 1.25rem;">R$ 398,75</div>
                 <span class="res-sub">CEMIG + Desconto Sollar</span>
               </div>
             </div>
@@ -2230,21 +2312,19 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="logo-text" style="color: var(--branco); display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
-          <svg class="logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Main Diagonal Bar (White) -->
-            <line x1="22" y1="78" x2="78" y2="22" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
-            <!-- Top-Left Diagonal Bar (Orange) -->
-            <line x1="22" y1="22" x2="38" y2="38" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-            <!-- Bottom-Right Diagonal Bar (Orange) -->
-            <line x1="62" y1="62" x2="78" y2="78" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-            <!-- Left Horizontal Bar (Orange) -->
-            <line x1="12" y1="50" x2="28" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-            <!-- Right Horizontal Bar (Orange) -->
-            <line x1="72" y1="50" x2="88" y2="50" stroke="#E3803B" stroke-width="12" stroke-linecap="round" />
-            <!-- Top Circle (White) -->
-            <circle cx="50" cy="18" r="9" fill="#FFFFFF" />
-            <!-- Bottom Circle (White) -->
-            <circle cx="50" cy="82" r="9" fill="#FFFFFF" />
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(150, 150)">
+              <!-- Diagonal principal (Branco) -->
+              <line x1="-80" y1="80" x2="80" y2="-80" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" />
+              <!-- Raios solares (Laranja) -->
+              <line x1="-72" y1="-72" x2="-36" y2="-36" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+              <line x1="36" y1="36" x2="72" y2="72" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+              <line x1="-102" y1="0" x2="-66" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+              <line x1="66" y1="0" x2="102" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+              <!-- Círculos (Branco) -->
+              <circle cx="0" cy="-94" r="20" fill="#FFFFFF" />
+              <circle cx="0" cy="94" r="20" fill="#FFFFFF" />
+            </g>
           </svg>
           Desconto<span style="color: var(--accent); opacity: 1;">Sollar</span>
         </div>
@@ -2344,10 +2424,19 @@
       const resAnnualSavings = document.getElementById('res-annual-savings');
       const resNewBill = document.getElementById('res-new-bill');
       const calcCtaWhatsapp = document.getElementById('calc-cta-whatsapp');
+      
+      // Phase connection buttons
+      const phaseMono = document.getElementById('phase-mono');
+      const phaseBi = document.getElementById('phase-bi');
+      const phaseTri = document.getElementById('phase-tri');
 
       const MIN_VAL = 150;
       const MAX_VAL = 20000;
       const k = Math.log(MAX_VAL / MIN_VAL);
+      
+      // State variables
+      let selectedKWh = 100; // Trifásico is default
+      let selectedPhaseName = "Trifásica";
 
       const sliderToValue = (s) => {
         const rawVal = MIN_VAL * Math.exp((s / 1000) * k);
@@ -2398,8 +2487,17 @@
           billValue = 0;
         }
 
-        const discountRate = 0.25;
-        const monthlySavings = billValue * discountRate;
+        const CEMIG_TARIFF = 0.95; // Average tariff rate in BRL per kWh
+        const discountRate = 0.25; // 25% discount
+        
+        // Subtract availability cost (custo de disponibilidade) before discount
+        const availabilityCostBRL = selectedKWh * CEMIG_TARIFF;
+        let compensableValue = billValue - availabilityCostBRL;
+        if (compensableValue < 0) {
+          compensableValue = 0;
+        }
+
+        const monthlySavings = compensableValue * discountRate;
         const annualSavings = monthlySavings * 12;
         const newBill = billValue - monthlySavings;
 
@@ -2415,11 +2513,26 @@
         const formattedMonthly = formatBRL(monthly);
         const formattedAnnual = formatBRL(annual);
         
-        const baseMessage = `Olá Sol! Simulei no site da Desconto Sollar. Minha conta média é de ${formattedBill}. Vi que posso economizar ${formattedMonthly} por mês (${formattedAnnual} por ano) com o desconto fixo de 25%. Quero garantir essa economia!`;
+        const baseMessage = `Olá Sol! Simulei no site da Desconto Sollar (Rede ${selectedPhaseName}). Minha conta média é de ${formattedBill}. Vi que posso economizar ${formattedMonthly} por mês (${formattedAnnual} por ano) com o desconto fixo de 25% (desconsiderando a taxa mínima da CEMIG). Quero garantir essa economia!`;
         const encodedMessage = encodeURIComponent(baseMessage);
         
         calcCtaWhatsapp.href = `https://wa.me/${SOL_WHATSAPP_NUMBER}?text=${encodedMessage}`;
       };
+
+      const selectPhase = (kwh, phaseName, activeBtn) => {
+        selectedKWh = kwh;
+        selectedPhaseName = phaseName;
+        
+        [phaseMono, phaseBi, phaseTri].forEach(btn => btn.classList.remove('active'));
+        activeBtn.classList.add('active');
+        
+        const currentVal = parseBRL(billInput.value);
+        calculate(currentVal);
+      };
+
+      phaseMono.addEventListener('click', () => selectPhase(30, "Monofásica", phaseMono));
+      phaseBi.addEventListener('click', () => selectPhase(50, "Bifásica", phaseBi));
+      phaseTri.addEventListener('click', () => selectPhase(100, "Trifásica", phaseTri));
 
       // Focus behavior: format as clean localized text with commas (e.g. 500 or 500,5)
       billInput.addEventListener('focus', () => {
@@ -2602,7 +2715,7 @@
         { type: 'sent', text: 'Sim! Quero economizar. Como funciona?' },
         { type: 'received', text: 'Excelente escolha! É super simples. Por favor, me envie uma foto ou PDF da sua última conta de luz da CEMIG, ou me diga o valor médio que você paga.' },
         { type: 'sent', text: 'Minha conta média é de R$ 500.' },
-        { type: 'received', text: 'Perfeito! Com seu consumo, você economizará R$ 125 por mês — isso representa R$ 1.500 de economia por ano! Vamos gerar sua proposta personalizada?' }
+        { type: 'received', text: 'Perfeito! Com seu consumo em rede Trifásica, você economizará R$ 101,25 por mês — isso representa R$ 1.215,00 de economia por ano! Vamos gerar sua proposta personalizada?' }
       ];
 
       let currentStep = 0;
