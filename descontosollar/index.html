@@ -2059,15 +2059,15 @@
             <div class="results-grid">
               <div class="result-box highlighted">
                 <span class="res-label">Sua Economia Mensal</span>
-                <div class="res-val" id="res-monthly-savings">R$ 101,25</div>
+                <div class="res-val" id="res-monthly-savings">R$ 96,50</div>
               </div>
               <div class="result-box highlighted">
                 <span class="res-label">Sua Economia Anual</span>
-                <div class="res-val" id="res-annual-savings" style="color: #25D366;">R$ 1.215,00</div>
+                <div class="res-val" id="res-annual-savings" style="color: #25D366;">R$ 1.158,00</div>
               </div>
               <div class="result-box">
                 <span class="res-label">Nova Fatura Estimada</span>
-                <div class="res-val" id="res-new-bill" style="font-size: 1.25rem;">R$ 398,75</div>
+                <div class="res-val" id="res-new-bill" style="font-size: 1.25rem;">R$ 403,50</div>
                 <span class="res-sub">CEMIG + Desconto Sollar</span>
               </div>
             </div>
@@ -2081,7 +2081,8 @@
                 Garantir Desconto no WhatsApp
               </a>
             </div>
-            <span style="display: block; text-align: center; font-size: 0.72rem; color: rgba(255,255,255,0.7); margin-top: 10px;">⚡ Dica: Você poderá enviar a foto da sua conta no WhatsApp para nossa equipe conferir e ativar seu desconto ainda hoje.</span>
+            <span style="display: block; text-align: center; font-size: 0.72rem; color: rgba(255,255,255,0.7); margin-top: 10px;">⚡ Dica: Você poderá enviar a foto da sua conta no WhatsApp para nossa equipe conferir e ativar seu desconto.</span>
+            <span style="display: block; text-align: center; font-size: 0.65rem; color: rgba(255,255,255,0.5); margin-top: 6px; font-style: italic;">*Simulação baseada na tarifa média estimada da CEMIG de R$ 1,14 / kWh (com impostos).</span>
           </div>
         </div>
       </div>
@@ -2149,7 +2150,7 @@
               Minha conta média é de R$ 500.
             </div>
             <div class="msg received">
-              Perfeito! Com seu consumo, você economizará R$ 125 por mês — isso representa R$ 1.500 de economia por ano! Vamos gerar sua proposta personalizada?
+              Perfeito! Com seu consumo em rede Trifásica, você economizará R$ 96,50 por mês — isso representa R$ 1.158,00 de economia por ano! Vamos gerar sua proposta personalizada?
             </div>
             <div class="msg received typing">
               <span class="dot-typing"></span>
@@ -2497,7 +2498,7 @@
           billValue = 0;
         }
 
-        const CEMIG_TARIFF = 0.95; // Average tariff rate in BRL per kWh
+        const CEMIG_TARIFF = 1.14; // Average tariff rate in BRL per kWh
         const discountRate = 0.25; // 25% discount
         
         // Subtract availability cost (custo de disponibilidade) before discount
@@ -2721,7 +2722,7 @@
         { type: 'sent', text: 'Sim! Quero economizar. Como funciona?' },
         { type: 'received', text: 'Excelente escolha! É super simples. Por favor, me envie uma foto ou PDF da sua última conta de luz da CEMIG, ou me diga o valor médio que você paga.' },
         { type: 'sent', text: 'Minha conta média é de R$ 500.' },
-        { type: 'received', text: 'Perfeito! Com seu consumo em rede Trifásica, você economizará R$ 101,25 por mês — isso representa R$ 1.215,00 de economia por ano! Vamos gerar sua proposta personalizada?' }
+        { type: 'received', text: 'Perfeito! Com seu consumo em rede Trifásica, você economizará R$ 96,50 por mês — isso representa R$ 1.158,00 de economia por ano! Vamos gerar sua proposta personalizada?' }
       ];
 
       let currentStep = 0;
