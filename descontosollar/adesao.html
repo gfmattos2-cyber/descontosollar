@@ -13,6 +13,7 @@
   <meta name="description" content="Adesão Online Desconto Sollar. Cadastre-se e economize até 25% na sua fatura da CEMIG sem investir em placas solares e sem obras.">
   <meta name="author" content="Desconto Sollar">
   <title>Adesão Digital | Desconto Sollar</title>
+  <link rel="icon" type="image/svg+xml" href="logo_simbolo.svg">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -903,6 +904,16 @@
             <span class="error-text">Insira um endereço de e-mail válido.</span>
           </div>
 
+          <!-- Código do Parceiro (Cupom) -->
+          <div class="form-group" id="partner-group" style="margin-bottom: 20px;">
+            <label for="codigo_parceiro" style="font-weight: 700;">Código do Parceiro / Cupom (Opcional)</label>
+            <div style="position: relative; display: flex; align-items: center; width: 100%;">
+              <input type="text" id="codigo_parceiro" name="codigo_parceiro" placeholder="Ex: PADARIAZE" style="text-transform: uppercase; padding-right: 40px;">
+              <span id="partner-lock-icon" style="position: absolute; right: 16px; display: none; color: #2e7d32; font-size: 0.85rem;">🔒</span>
+            </div>
+            <span class="info-text" id="partner-status" style="display: none; font-size: 0.72rem; color: #2e7d32; font-weight: 700; margin-top: 4px;"></span>
+          </div>
+
           <div class="btn-actions">
             <button type="button" class="btn btn-primary" id="btn-next">Continuar Adesão &rarr;</button>
           </div>
@@ -963,6 +974,8 @@
             </div>
             <span class="error-text" id="error-cnh">O anexo do documento de identificação é obrigatório.</span>
           </div>
+
+
 
           <!-- Consentimento e Termos -->
           <div class="form-group checkbox-group" id="consent-group">
@@ -1064,6 +1077,30 @@
       const errFatura = document.getElementById('error-fatura');
       const errCnh = document.getElementById('error-cnh');
       const errConsent = document.getElementById('error-consentimento');
+
+      // ==========================================
+      // RASTREAMENTO DE CUPOM / PARCEIRO DA URL
+      // ==========================================
+      const urlParams = new URLSearchParams(window.location.search);
+      const refCode = urlParams.get('ref') || urlParams.get('parceiro') || urlParams.get('cupom');
+      const inputParceiro = document.getElementById('codigo_parceiro');
+      const lockIcon = document.getElementById('partner-lock-icon');
+      const partnerStatus = document.getElementById('partner-status');
+
+      if (refCode && inputParceiro) {
+        const cleanCode = refCode.trim().toUpperCase();
+        inputParceiro.value = cleanCode;
+        inputParceiro.readOnly = true;
+        inputParceiro.style.backgroundColor = '#F1F8E9';
+        inputParceiro.style.borderColor = '#2e7d32';
+        inputParceiro.style.color = '#2e7d32';
+        inputParceiro.style.fontWeight = '700';
+        if (lockIcon) lockIcon.style.display = 'block';
+        if (partnerStatus) {
+          partnerStatus.textContent = `✓ Indicação ativa do parceiro: ${cleanCode}`;
+          partnerStatus.style.display = 'block';
+        }
+      }
 
       // ==========================================
       // 1. MÁSCARAS DE ENTRADA
