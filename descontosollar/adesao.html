@@ -911,6 +911,8 @@
               <input type="text" id="codigo_parceiro" name="codigo_parceiro" placeholder="Ex: PADARIAZE" style="text-transform: uppercase; padding-right: 40px;">
               <span id="partner-lock-icon" style="position: absolute; right: 16px; display: none; color: #2e7d32; font-size: 0.85rem;">🔒</span>
             </div>
+            <input type="hidden" id="nome_parceiro" name="nome_parceiro">
+            <input type="hidden" id="desconto_percentual" name="desconto_percentual" value="25">
             <span class="info-text" id="partner-status" style="display: none; font-size: 0.72rem; color: #2e7d32; font-weight: 700; margin-top: 4px;"></span>
           </div>
 
@@ -1083,12 +1085,26 @@
       // ==========================================
       const urlParams = new URLSearchParams(window.location.search);
       const refCode = urlParams.get('ref') || urlParams.get('parceiro') || urlParams.get('cupom');
+      const refNome = urlParams.get('nome');
+      const refDesc = urlParams.get('desc') || urlParams.get('desconto') || '25';
+      
       const inputParceiro = document.getElementById('codigo_parceiro');
+      const inputNomeParceiro = document.getElementById('nome_parceiro');
+      const inputDescontoPercentual = document.getElementById('desconto_percentual');
       const lockIcon = document.getElementById('partner-lock-icon');
       const partnerStatus = document.getElementById('partner-status');
 
+      // Tabela de fallbacks caso o nome do parceiro não venha na URL
+      const PARTNER_MAP = {
+        "CABOCLANEW": "Cabocla de Nova Lima",
+        "CABOCLASA": "Cabocla de Nova Lima",
+        "CABOCLANOVALIMA": "Cabocla de Nova Lima",
+        "SOL": "Sol (Interno)"
+      };
+
+      let cleanCode = "";
       if (refCode && inputParceiro) {
-        const cleanCode = refCode.trim().toUpperCase();
+        cleanCode = refCode.trim().toUpperCase();
         inputParceiro.value = cleanCode;
         inputParceiro.readOnly = true;
         inputParceiro.style.backgroundColor = '#F1F8E9';
@@ -1100,6 +1116,20 @@
           partnerStatus.textContent = `✓ Indicação ativa do parceiro: ${cleanCode}`;
           partnerStatus.style.display = 'block';
         }
+      }
+
+      // Definir o nome do parceiro (com fallback de segurança)
+      let partnerName = refNome ? refNome.trim() : "";
+      if (!partnerName && cleanCode && PARTNER_MAP[cleanCode]) {
+        partnerName = PARTNER_MAP[cleanCode];
+      }
+      if (partnerName && inputNomeParceiro) {
+        inputNomeParceiro.value = partnerName;
+      }
+
+      // Definir a taxa de desconto (padrão 25%)
+      if (inputDescontoPercentual) {
+        inputDescontoPercentual.value = refDesc.trim();
       }
 
       // ==========================================
