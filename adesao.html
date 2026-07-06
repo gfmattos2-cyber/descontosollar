@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N2JZ7G3C');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adesão Online Desconto Sollar. Cadastre-se e economize até 25% na sua fatura da CEMIG sem investir em placas solares e sem obras.">
+  <meta name="author" content="Desconto Sollar">
+  <title>Adesão Digital | Desconto Sollar</title>
+  <link rel="icon" type="image/svg+xml" href="logo_simbolo.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ── DESIGN SYSTEM & VARIÁVEIS ── */
+    :root {
+      --primary:        #258887;
+      --primary-esc:    #1b6261;
+      --primary-claro:  #e9f3f3;
+      --primary-mid:    #2b9897;
+      --accent:         #D85C03;
+      --accent-esc:     #aa4902;
+      --accent-claro:   #fcf1e6;
+      --accent-glow:    rgba(216, 92, 3, 0.12);
+      
+      --cinza-bg:       #F5F7FA;
+      --cinza-borda:    #E2E8F0;
+      --texto:          #1E293B;
+      --texto-sub:      #64748B;
+      --branco:         #FFFFFF;
+      
+      --border-radius:  16px;
+      --transition:     all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-sm:      0 2px 8px rgba(37, 136, 135, 0.05);
+      --shadow-md:      0 10px 30px rgba(37, 136, 135, 0.08);
+      --shadow-lg:      0 20px 45px rgba(27, 98, 97, 0.12);
+    }
+
+    /* ── RESET & CONFIGURAÇÕES GERAIS ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cinza-bg);
+      color: var(--texto);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px 40px;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 10px 0;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.3rem;
+      line-height: 1;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    .btn-back-home {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--texto-sub);
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-back-home:hover {
+      color: var(--primary);
+    }
+
+    /* ── CARD PRINCIPAL ── */
+    .card-container {
+      background-color: var(--branco);
+      border-radius: var(--border-radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--cinza-borda);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Banner explicativo de benefícios */
+    .benefit-callout {
+      background: linear-gradient(135deg, var(--primary-claro) 0%, rgba(252, 241, 230, 0.4) 100%);
+      border: 1px solid rgba(37, 136, 135, 0.15);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 18px 16px;
+      margin-bottom: 24px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .benefit-callout h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-esc);
+      margin-bottom: 6px;
+    }
+
+    .benefit-callout p {
+      font-size: 0.82rem;
+      color: var(--texto-sub);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .benefit-tags {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .benefit-tag {
+      background-color: var(--branco);
+      border: 1px solid rgba(37, 136, 135, 0.15);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--primary-esc);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .benefit-tag span {
+      font-size: 0.85rem;
+    }
+
+    .benefit-callout .footnote {
+      font-size: 0.68rem;
+      color: var(--texto-sub);
+      font-style: italic;
+      display: block;
+    }
+
+    /* ── STEPPER (INDICADOR DE PASSOS) ── */
+    .stepper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+      width: 40%;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--cinza-bg);
+      border: 2.5px solid var(--cinza-borda);
+      color: var(--texto-sub);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .step-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--texto-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .step.active .step-number {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-esc) 100%);
+      border-color: var(--primary-esc);
+      color: var(--branco);
+      box-shadow: 0 4px 10px rgba(37, 136, 135, 0.2), 0 0 0 4px var(--primary-claro);
+      font-weight: 800;
+    }
+
+    .step.active .step-label {
+      color: var(--primary-esc);
+    }
+
+    .step.completed .step-number {
+      background-color: #2e7d32;
+      border-color: #2e7d32;
+      color: transparent;
+      position: relative;
+    }
+
+    .step.completed .step-number::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid var(--branco);
+      border-bottom: 2px solid var(--branco);
+      transform: translate(-50%, -60%) rotate(-45deg);
+      top: 50%;
+      left: 50%;
+    }
+
+    .step.completed .step-label {
+      color: #2e7d32;
+    }
+
+    .step-divider {
+      flex: 1;
+      height: 2px;
+      background-color: var(--cinza-borda);
+      margin-top: -24px;
+      position: relative;
+      z-index: 1;
+      transition: var(--transition);
+    }
+
+    .step-divider.completed {
+      background-color: var(--primary);
+    }
+
+    /* ── FORMULÁRIO & INPUTS ── */
+    .form-step {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+    }
+
+    .form-step.active {
+      display: block;
+      animation: slideIn 0.35s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--texto);
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      border: 1.5px solid var(--cinza-borda);
+      border-radius: 10px;
+      background-color: var(--branco);
+      color: var(--texto);
+      transition: var(--transition);
+      outline: none;
+      font-family: inherit;
+    }
+
+    input::placeholder {
+      color: var(--texto-sub);
+      opacity: 0.5;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-claro);
+    }
+
+    /* Estados de Validação */
+    .form-group.invalid input,
+    .form-group.invalid select {
+      border-color: #E53E3E;
+      background-color: #FFF5F5;
+    }
+
+    .form-group.invalid label {
+      color: #C53030;
+    }
+
+    .error-text {
+      font-size: 0.72rem;
+      color: #E53E3E;
+      font-weight: 600;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .form-group.invalid .error-text {
+      display: block;
+    }
+
+    /* ── UPLOAD ZONES ── */
+    .upload-zone {
+      border: 2px dashed var(--primary);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+      background-color: #F8FAFC;
+      cursor: pointer;
+      position: relative;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .upload-zone:hover,
+    .upload-zone.dragover {
+      background-color: var(--primary-claro);
+      border-color: var(--primary-mid);
+      transform: scale(1.01);
+    }
+
+    .upload-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .upload-prompt p {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--texto);
+    }
+
+    .upload-prompt span {
+      font-size: 0.68rem;
+      color: var(--texto-sub);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .file-input {
+      display: none !important;
+    }
+
+    /* Preview do arquivo carregado */
+    .preview-container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      min-width: 0;
+      gap: 10px;
+    }
+
+    .file-attached-card {
+      display: flex;
+      align-items: center;
+      background-color: var(--branco);
+      border: 1.5px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      gap: 12px;
+      text-align: left;
+      box-shadow: 0 4px 12px rgba(37, 136, 135, 0.05);
+      animation: fadeIn 0.3s ease-out;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .file-icon-wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: var(--primary-claro);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .file-details {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .file-details .file-name {
+      display: block;
+      width: 100%;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--texto);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+    }
+
+    .file-details .file-status {
+      display: block;
+      width: 100%;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-remove-file-new {
+      background-color: var(--accent-claro);
+      border: none;
+      color: var(--accent);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .btn-remove-file-new:hover {
+      background-color: var(--accent);
+      color: var(--branco);
+      transform: scale(1.1);
+    }
+
+    .upload-zone.has-file {
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      align-items: stretch !important;
+      justify-content: flex-start !important;
+      overflow: hidden;
+    }
+
+    .upload-zone.invalid {
+      border-color: #E53E3E;
+      background-color: #FFF5F5;
+    }
+
+    /* ── CHECKBOX / LGPD ── */
+    .checkbox-group {
+      margin-top: 24px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      position: relative;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 500;
+      line-height: 1.4;
+      user-select: none;
+      padding-left: 28px;
+      color: var(--texto);
+    }
+
+    .checkbox-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      background-color: var(--branco);
+      border: 1.5px solid var(--cinza-borda);
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .checkbox-container:hover input ~ .checkmark {
+      border-color: var(--primary);
+    }
+
+    .checkbox-container input:checked ~ .checkmark {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .checkbox-container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .checkbox-container .checkmark:after {
+      left: 5px;
+      top: 2px;
+      width: 5px;
+      height: 9px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .checkbox-group.invalid .checkmark {
+      border-color: #E53E3E;
+      background-color: #FFF5F5;
+    }
+
+    .checkbox-group.invalid .checkbox-text {
+      color: #C53030;
+    }
+
+    /* ── BOTÕES ── */
+    .btn-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 28px;
+      border-top: 1.5px solid var(--cinza-bg);
+      padding-top: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      color: var(--branco);
+      box-shadow: 0 4px 15px rgba(37, 136, 135, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary) 100%);
+      box-shadow: 0 6px 20px rgba(37, 136, 135, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: #E2E8F0;
+      color: var(--texto);
+    }
+
+    .btn-secondary:hover {
+      background-color: #CBD5E0;
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-esc) 100%);
+      color: var(--branco);
+      box-shadow: 0 4px 15px rgba(216, 92, 3, 0.2);
+    }
+
+    .btn-submit:hover {
+      background: linear-gradient(135deg, var(--accent-esc) 0%, var(--accent) 100%);
+      box-shadow: 0 6px 20px rgba(216, 92, 3, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Spinner de envio */
+    .spinner {
+      animation: rotate 2s linear infinite;
+      width: 18px;
+      height: 18px;
+    }
+    .spinner .path {
+      stroke: var(--branco);
+      stroke-linecap: round;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+    @keyframes rotate { 100% { transform: rotate(360deg); } }
+    @keyframes dash {
+      0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+      50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+      100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+    }
+
+    /* ── TELA DE SUCESSO ── */
+    .success-screen {
+      text-align: center;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .success-icon-container {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: #E8F5E9;
+      color: #2e7d32;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 10px rgba(46, 125, 50, 0.1);
+      border: 1px solid rgba(46, 125, 50, 0.15);
+    }
+
+    .success-screen h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #2e7d32;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .success-screen p {
+      font-size: 0.88rem;
+      color: var(--texto-sub);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .next-steps-card {
+      background-color: var(--cinza-bg);
+      border: 1px solid var(--cinza-borda);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    .next-steps-card h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--texto);
+      margin-bottom: 12px;
+    }
+
+    .next-steps-card ul {
+      list-style: none;
+    }
+
+    .next-steps-card li {
+      font-size: 0.78rem;
+      color: var(--texto-sub);
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+      line-height: 1.45;
+    }
+
+    .next-steps-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .next-steps-card li::before {
+      content: "✓";
+      color: #2e7d32;
+      position: absolute;
+      left: 0;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.68rem;
+      color: var(--texto-sub);
+      line-height: 1.6;
+    }
+
+    .footer .regulated {
+      font-size: 0.62rem;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+
+    /* ── RESPONSIVIDADE ── */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px 8px 24px;
+      }
+      
+      .card-container {
+        padding: 24px 16px;
+        border-radius: 12px;
+      }
+
+      .btn-actions {
+        flex-direction: column-reverse;
+        gap: 8px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2JZ7G3C"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="main-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <svg width="28" height="28" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(150, 150)">
+            <line x1="-80" y1="80" x2="80" y2="-80" stroke="#258887" stroke-width="24" stroke-linecap="round" />
+            <line x1="-72" y1="-72" x2="-36" y2="-36" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="36" y1="36" x2="72" y2="72" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="-102" y1="0" x2="-66" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <line x1="66" y1="0" x2="102" y2="0" stroke="#D85C03" stroke-width="24" stroke-linecap="round" />
+            <circle cx="0" cy="-94" r="20" fill="#258887" />
+            <circle cx="0" cy="94" r="20" fill="#258887" />
+          </g>
+        </svg>
+        <div class="logo-text">Desconto<span>Sollar</span></div>
+      </a>
+      <a href="index.html" class="btn-back-home">
+        &larr; Voltar ao site
+      </a>
+    </header>
+
+    <!-- CARD PRINCIPAL -->
+    <main class="card-container">
+      
+      <!-- Stepper: Progresso das Etapas -->
+      <div class="stepper" id="form-stepper">
+        <div class="step active" id="step-indicator-1">
+          <span class="step-number">1</span>
+          <span class="step-label">Dados Pessoais</span>
+        </div>
+        <div class="step-divider" id="step-divider-1"></div>
+        <div class="step" id="step-indicator-2">
+          <span class="step-number">2</span>
+          <span class="step-label">Documentação</span>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO DE ADESÃO -->
+      <form id="onboarding-form" enctype="multipart/form-data" novalidate>
+        
+        <!-- ETAPA 1: Dados Pessoais -->
+        <fieldset id="step-1" class="form-step active">
+          <legend class="hidden">Dados Pessoais</legend>
+          
+          <div class="benefit-callout">
+            <h3>Garanta Desconto Fixo na sua conta de energia</h3>
+            <p>Assine nossa usina solar 100% digital. Sem investimentos, sem obras e sem taxa de fidelidade.</p>
+            <div class="benefit-tags">
+              <div class="benefit-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary); flex-shrink: 0;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                Sem Obras
+              </div>
+              <div class="benefit-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary); flex-shrink: 0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                Sem Fidelidade
+              </div>
+            </div>
+            <span class="footnote">*Válido para contas da CEMIG a partir de R$ 150,00.</span>
+          </div>
+
+          <div class="form-group" id="desconto-display-group">
+            <label for="desconto_visible" style="font-weight: 700;">Desconto Garantido na Fatura</label>
+            <input type="text" id="desconto_visible" name="desconto_visible" readonly style="background-color: var(--primary-claro); color: var(--primary-esc); font-weight: 800; border: 1.5px solid var(--primary); cursor: not-allowed;" value="20%">
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            <span class="error-text">Por favor, insira seu nome completo (mínimo 3 letras).</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cpf">CPF</label>
+              <input type="tel" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+              <span class="error-text">CPF inválido ou incompleto.</span>
+            </div>
+            <div class="form-group">
+              <label for="telefone">WhatsApp / Celular</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" maxlength="15" required>
+              <span class="error-text">Telefone inválido.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail Pessoal</label>
+            <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+            <span class="error-text">Insira um endereço de e-mail válido.</span>
+          </div>
+
+          <!-- Código do Parceiro (Cupom) -->
+          <div class="form-group" id="partner-group" style="margin-bottom: 20px;">
+            <label for="codigo_parceiro" style="font-weight: 700;">Código do Parceiro / Cupom (Opcional)</label>
+            <div style="position: relative; display: flex; align-items: center; width: 100%;">
+              <input type="text" id="codigo_parceiro" name="codigo_parceiro" placeholder="Ex: DESCONTOSOLLAR" style="text-transform: uppercase; padding-right: 40px;">
+              <span id="partner-lock-icon" style="position: absolute; right: 16px; display: none; color: #2e7d32; font-size: 0.85rem;">🔒</span>
+            </div>
+            <input type="hidden" id="nome_parceiro" name="nome_parceiro">
+            <input type="hidden" id="desconto_percentual" name="desconto_percentual" value="25">
+            <span class="info-text" id="partner-status" style="display: none; font-size: 0.72rem; color: #2e7d32; font-weight: 700; margin-top: 4px;"></span>
+          </div>
+
+          <div class="btn-actions">
+            <button type="button" class="btn btn-primary" id="btn-next">Continuar Adesão &rarr;</button>
+          </div>
+
+          <div class="whatsapp-support" style="margin-top: 24px; text-align: center; border-top: 1px dashed #e2e8f0; padding-top: 16px;">
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 8px;">Ainda tem dúvidas? Fale com o nosso time no WhatsApp:</p>
+            <a href="https://wa.me/5531984035604?text=Olá,%20tenho%20dúvidas%20sobre%20a%20adesão%20do%20Desconto%20Sollar." target="_blank" class="btn" style="background-color: #25D366; color: #ffffff; border: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; width: 100%; text-decoration: none; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#1ebd5c'" onmouseout="this.style.backgroundColor='#25D366'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+              Converse com nosso time
+            </a>
+          </div>
+        </fieldset>
+
+        <!-- ETAPA 2: Upload de Documentos -->
+        <fieldset id="step-2" class="form-step">
+          <legend class="hidden">Documentação</legend>
+          
+          <div class="form-group">
+            <label>Conta de Energia CEMIG Recente (Foto ou PDF)</label>
+            <div class="upload-zone" id="drop-zone-fatura">
+              <input type="file" id="fatura_energia" name="fatura_energia" accept="image/*,application/pdf" required class="file-input" style="display: none !important;">
+              <div class="upload-prompt" id="prompt-fatura">
+                <span class="upload-icon">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </span>
+                <p>Arraste a foto/PDF ou clique para selecionar</p>
+                <span>Formatos: JPG, PNG ou PDF (Máx 10MB)</span>
+              </div>
+              <div class="preview-container hidden" id="preview-fatura">
+                <div class="file-attached-card">
+                  <div class="file-icon-wrapper">
+                    <span class="file-type-icon" id="icon-fatura">📄</span>
+                  </div>
+                  <div class="file-details">
+                    <span class="file-name" id="name-fatura" style="font-weight: 700; color: var(--primary); font-size: 0.8rem;">Fatura Anexada ✓</span>
+                  </div>
+                  <button type="button" class="btn-remove-file-new" id="remove-fatura" title="Remover arquivo">&times;</button>
+                </div>
+              </div>
+            </div>
+            <span class="error-text" id="error-fatura">O anexo da sua conta de luz é obrigatório.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Identidade Oficial (RG ou CNH - Frente/Verso)</label>
+            <div class="upload-zone" id="drop-zone-cnh">
+              <input type="file" id="cnh_documento" name="cnh_documento" accept="image/*,application/pdf" required class="file-input" style="display: none !important;">
+              <div class="upload-prompt" id="prompt-cnh">
+                <span class="upload-icon">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);"><rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect><line x1="7" y1="8" x2="17" y2="8"></line><line x1="7" y1="12" x2="17" y2="12"></line><circle cx="7" cy="16" r="1"></circle><line x1="11" y1="16" x2="17" y2="16"></line></svg>
+                </span>
+                <p>Arraste a foto/PDF ou clique para selecionar</p>
+                <span>Formatos: JPG, PNG ou PDF (Máx 10MB)</span>
+              </div>
+              <div class="preview-container hidden" id="preview-cnh">
+                <div class="file-attached-card">
+                  <div class="file-icon-wrapper">
+                    <span class="file-type-icon" id="icon-cnh">📄</span>
+                  </div>
+                  <div class="file-details">
+                    <span class="file-name" id="name-cnh" style="font-weight: 700; color: var(--primary); font-size: 0.8rem;">Documento Anexado ✓</span>
+                  </div>
+                  <button type="button" class="btn-remove-file-new" id="remove-cnh" title="Remover arquivo">&times;</button>
+                </div>
+              </div>
+            </div>
+            <span class="error-text" id="error-cnh">O anexo do documento de identificação é obrigatório.</span>
+          </div>
+
+
+
+          <!-- Consentimento e Termos -->
+          <div class="form-group checkbox-group" id="consent-group">
+            <label class="checkbox-container">
+              <input type="checkbox" id="consentimento" name="consentimento" required>
+              <span class="checkmark"></span>
+              <span class="checkbox-text">Autorizo a Desconto Sollar a processar a análise da minha conta de luz e concordo com os Termos de Adesão voluntária de energia por assinatura em conformidade com a Lei Federal nº 14.300/2022 (Marco Legal da GD), regulamentações da ANEEL e LGPD.</span>
+            </label>
+            <span class="error-text" id="error-consentimento">Você precisa aceitar os termos de consentimento.</span>
+          </div>
+
+          <div class="btn-actions">
+            <button type="button" class="btn btn-secondary" id="btn-prev">&larr; Voltar</button>
+            <button type="submit" class="btn btn-submit" id="btn-submit">
+              <span class="btn-text">Finalizar Adesão ✓</span>
+              <span class="btn-spinner hidden">
+                <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+              </span>
+            </button>
+          </div>
+        </fieldset>
+
+        <!-- TELA DE SUCESSO -->
+        <div id="success-screen" class="success-screen hidden">
+          <div class="success-icon-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h2>Cadastro Concluído!</h2>
+          <p>Obrigado! Seus dados e documentos foram enviados com sucesso para nossa equipe de análise comercial e técnica.</p>
+          
+          <div class="next-steps-card">
+            <h4>Próximos Passos:</h4>
+            <ul>
+              <li><strong>1. Análise Documental:</strong> Revisaremos sua conta de luz e o documento para garantir a viabilidade técnica em até 24h.</li>
+              <li><strong>2. Solicitação junto à CEMIG:</strong> Faremos o cadastro do benefício solar diretamente com a distribuidora.</li>
+              <li><strong>3. Ativação do Desconto:</strong> Em um prazo de 30 a 60 dias, a economia aparecerá diretamente nas suas contas mensais.</li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Desconto Sollar. Todos os direitos reservados.</p>
+      <p class="regulated">Serviço de Geração Distribuída regulamentado em conformidade com a Lei Federal nº 14.300/2022 (Marco Legal da GD) e a Resolução Normativa ANEEL nº 1.000/2021 (com as alterações da REN nº 1.059/2023).</p>
+    </footer>
+  </div>
+
+  <!-- LÓGICA DE COMPORTAMENTO -->
+  <script>
+    const INTEGRATION_ENDPOINT = 'https://burrowinggoose-n8n.cloudfy.live/webhook/b6e01df2-488e-4ff4-8026-b64a05fb386b';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elementos do Form
+      const form = document.getElementById('onboarding-form');
+      const step1 = document.getElementById('step-1');
+      const step2 = document.getElementById('step-2');
+      const stepper = document.getElementById('form-stepper');
+      const successScreen = document.getElementById('success-screen');
+
+      // Botões
+      const btnNext = document.getElementById('btn-next');
+      const btnPrev = document.getElementById('btn-prev');
+      const btnSubmit = document.getElementById('btn-submit');
+      const btnText = btnSubmit.querySelector('.btn-text');
+      const btnSpinner = btnSubmit.querySelector('.btn-spinner');
+
+      // Indicadores
+      const ind1 = document.getElementById('step-indicator-1');
+      const ind2 = document.getElementById('step-indicator-2');
+      const div1 = document.getElementById('step-divider-1');
+
+      // Inputs Passo 1
+      const inNome = document.getElementById('nome');
+      const inCpf = document.getElementById('cpf');
+      const inTelefone = document.getElementById('telefone');
+      const inEmail = document.getElementById('email');
+
+      // Inputs e Zonas Passo 2
+      const inputFatura = document.getElementById('fatura_energia');
+      const inputCnh = document.getElementById('cnh_documento');
+      const zoneFatura = document.getElementById('drop-zone-fatura');
+      const zoneCnh = document.getElementById('drop-zone-cnh');
+      const prevFatura = document.getElementById('preview-fatura');
+      const prevCnh = document.getElementById('preview-cnh');
+      const nameFatura = document.getElementById('name-fatura');
+      const nameCnh = document.getElementById('name-cnh');
+      const checkConsent = document.getElementById('consentimento');
+      const consentGroup = document.getElementById('consent-group');
+
+      // Botões de Remoção
+      const btnRemoveFatura = document.getElementById('remove-fatura');
+      const btnRemoveCnh = document.getElementById('remove-cnh');
+
+      // Spans de erro Passo 2
+      const errFatura = document.getElementById('error-fatura');
+      const errCnh = document.getElementById('error-cnh');
+      const errConsent = document.getElementById('error-consentimento');
+
+      // ==========================================
+      // RASTREAMENTO DE CUPOM / PARCEIRO DA URL
+      // ==========================================
+      const urlParams = new URLSearchParams(window.location.search);
+      const refCode = urlParams.get('ref') || urlParams.get('parceiro') || urlParams.get('cupom');
+      const refNome = urlParams.get('nome');
+      const refDesc = urlParams.get('desc') || urlParams.get('desconto') || '20';
+      
+      const inputParceiro = document.getElementById('codigo_parceiro');
+      const inputNomeParceiro = document.getElementById('nome_parceiro');
+      const inputDescontoPercentual = document.getElementById('desconto_percentual');
+      const lockIcon = document.getElementById('partner-lock-icon');
+      const partnerStatus = document.getElementById('partner-status');
+
+      // Tabela de fallbacks caso o nome do parceiro não venha na URL
+      const PARTNER_MAP = {
+        "CABOCLANEW": "Cabocla de Nova Lima",
+        "CABOCLASA": "Cabocla de Nova Lima",
+        "CABOCLANOVALIMA": "Cabocla de Nova Lima",
+        "SOL": "Sol (Interno)",
+        "DESCONTOSOLLAR": "Desconto Sollar (Parceiro Especial)"
+      };
+
+      let cleanCode = "";
+      if (refCode && inputParceiro) {
+        cleanCode = refCode.trim().toUpperCase();
+        inputParceiro.value = cleanCode;
+        inputParceiro.readOnly = true;
+        inputParceiro.style.backgroundColor = '#F1F8E9';
+        inputParceiro.style.borderColor = '#2e7d32';
+        inputParceiro.style.color = '#2e7d32';
+        inputParceiro.style.fontWeight = '700';
+        if (lockIcon) lockIcon.style.display = 'block';
+        if (partnerStatus) {
+          partnerStatus.textContent = `✓ Indicação ativa do parceiro: ${cleanCode}`;
+          partnerStatus.style.display = 'block';
+        }
+      }
+
+      // Definir o nome do parceiro (com fallback de segurança)
+      let partnerName = refNome ? refNome.trim() : "";
+      if (!partnerName && cleanCode && PARTNER_MAP[cleanCode]) {
+        partnerName = PARTNER_MAP[cleanCode];
+      }
+      if (partnerName && inputNomeParceiro) {
+        inputNomeParceiro.value = partnerName;
+      }
+
+      // Definir a taxa de desconto (padrão 20%)
+      const cleanDesc = refDesc.trim().replace('%', '');
+      let basePercent = (cleanCode === "DESCONTOSOLLAR") ? "22" : cleanDesc;
+
+      if (inputDescontoPercentual) {
+        inputDescontoPercentual.value = basePercent;
+      }
+      const visibleDescInput = document.getElementById('desconto_visible');
+      if (visibleDescInput) {
+        visibleDescInput.value = `${basePercent}%`;
+      }
+
+      // Ouvinte de digitação no campo de cupom/código de parceiro
+      if (inputParceiro) {
+        inputParceiro.addEventListener('input', (e) => {
+          const typedVal = e.target.value.trim().toUpperCase();
+          
+          if (typedVal === "DESCONTOSOLLAR") {
+            // Força 22% se colocar o código especial
+            if (inputDescontoPercentual) inputDescontoPercentual.value = "22";
+            if (visibleDescInput) visibleDescInput.value = "22%";
+            if (inputNomeParceiro) inputNomeParceiro.value = PARTNER_MAP["DESCONTOSOLLAR"];
+            if (partnerStatus) {
+              partnerStatus.textContent = `✓ Código especial ativado: 22% de desconto!`;
+              partnerStatus.style.display = 'block';
+              partnerStatus.style.color = '#2e7d32';
+            }
+          } else {
+            // Se digitar qualquer outro código, volta ao padrão original da URL
+            const urlBasedPercent = (cleanCode === "DESCONTOSOLLAR") ? "22" : cleanDesc;
+            const urlBasedName = partnerName;
+            
+            if (inputDescontoPercentual) inputDescontoPercentual.value = urlBasedPercent;
+            if (visibleDescInput) visibleDescInput.value = `${urlBasedPercent}%`;
+            if (inputNomeParceiro) inputNomeParceiro.value = urlBasedName;
+            
+            if (partnerStatus) {
+              if (typedVal) {
+                partnerStatus.textContent = `Cupom inserido: ${typedVal}`;
+                partnerStatus.style.color = '#555555';
+              } else {
+                partnerStatus.style.display = 'none';
+              }
+            }
+          }
+        });
+      }
+
+      // ==========================================
+      // 1. MÁSCARAS DE ENTRADA
+      // ==========================================
+
+      // Máscara CPF (000.000.000-00)
+      inCpf.addEventListener('input', (e) => {
+        let v = e.target.value.replace(/\D/g, "");
+        if (v.length > 11) v = v.substring(0, 11);
+        
+        if (v.length > 9) {
+          v = v.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})$/, "$1.$2.$3-$4");
+        } else if (v.length > 6) {
+          v = v.replace(/^(\d{3})(\d{3})(\d{1,3})$/, "$1.$2.$3");
+        } else if (v.length > 3) {
+          v = v.replace(/^(\d{3})(\d{1,3})$/, "$1.$2");
+        }
+        e.target.value = v;
+        clearError(inCpf);
+      });
+
+      // Máscara Telefone ((31) 99999-9999)
+      inTelefone.addEventListener('input', (e) => {
+        let v = e.target.value.replace(/\D/g, "");
+        if (v.length > 11) v = v.substring(0, 11);
+
+        if (v.length > 10) {
+          v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+        } else if (v.length > 6) {
+          v = v.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+        } else if (v.length > 2) {
+          v = v.replace(/^(\d{2})(\d{0,4})$/, "($1) $2");
+        } else if (v.length > 0) {
+          v = `(${v}`;
+        }
+        e.target.value = v;
+        clearError(inTelefone);
+      });
+
+      // Limpar erro ao digitar
+      [inNome, inEmail].forEach(input => {
+        input.addEventListener('input', () => clearError(input));
+      });
+
+      function showError(input) {
+        input.closest('.form-group').classList.add('invalid');
+      }
+
+      function clearError(input) {
+        input.closest('.form-group').classList.remove('invalid');
+      }
+
+      // ==========================================
+      // 2. VALIDAÇÃO DOS DADOS
+      // ==========================================
+
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      function validateCPF(cpfStr) {
+        const cpf = cpfStr.replace(/\D/g, "");
+        if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+
+        let soma = 0;
+        let resto;
+        
+        for (let i = 1; i <= 9; i++) {
+          soma += parseInt(cpf.substring(i - 1, i)) * (11 - i);
+        }
+        resto = (soma * 10) % 11;
+        if (resto === 10 || resto === 11) resto = 0;
+        if (resto !== parseInt(cpf.substring(9, 10))) return false;
+
+        soma = 0;
+        for (let i = 1; i <= 10; i++) {
+          soma += parseInt(cpf.substring(i - 1, i)) * (12 - i);
+        }
+        resto = (soma * 10) % 11;
+        if (resto === 10 || resto === 11) resto = 0;
+        if (resto !== parseInt(cpf.substring(10, 11))) return false;
+
+        return true;
+      }
+
+      function validateStep1() {
+        let ok = true;
+
+        if (inNome.value.trim().length < 3) {
+          showError(inNome);
+          ok = false;
+        } else {
+          clearError(inNome);
+        }
+
+        if (!validateCPF(inCpf.value)) {
+          showError(inCpf);
+          ok = false;
+        } else {
+          clearError(inCpf);
+        }
+
+        if (inTelefone.value.replace(/\D/g, "").length < 10) {
+          showError(inTelefone);
+          ok = false;
+        } else {
+          clearError(inTelefone);
+        }
+
+        if (!validateEmail(inEmail.value)) {
+          showError(inEmail);
+          ok = false;
+        } else {
+          clearError(inEmail);
+        }
+
+        return ok;
+      }
+
+      // ==========================================
+      // 3. ALTERNAÇÃO DE ETAPAS (STEP NAVIGATION)
+      // ==========================================
+
+      btnNext.addEventListener('click', () => {
+        if (validateStep1()) {
+          // Ir para Passo 2
+          step1.classList.remove('active');
+          step2.classList.add('active');
+
+          // Atualizar Stepper
+          ind1.classList.remove('active');
+          ind1.classList.add('completed');
+          div1.classList.add('completed');
+          ind2.classList.add('active');
+
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+
+      btnPrev.addEventListener('click', () => {
+        // Voltar para Passo 1
+        step2.classList.remove('active');
+        step1.classList.add('active');
+
+        // Atualizar Stepper
+        ind2.classList.remove('active');
+        div1.classList.remove('completed');
+        ind1.classList.remove('completed');
+        ind1.classList.add('active');
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ==========================================
+      // 4. SUPORTE DRAG & DROP E ARQUIVOS
+      // ==========================================
+
+      // Disparar cliques nos inputs ocultos
+      zoneFatura.addEventListener('click', (e) => {
+        if (!e.target.closest('.preview-container') && !e.target.closest('.btn-remove-file')) {
+          inputFatura.click();
+        }
+      });
+      zoneCnh.addEventListener('click', (e) => {
+        if (!e.target.closest('.preview-container') && !e.target.closest('.btn-remove-file')) {
+          inputCnh.click();
+        }
+      });
+
+      // Seletor de Arquivos Normal
+      inputFatura.addEventListener('change', (e) => handleFile(e.target.files[0], 'fatura'));
+      inputCnh.addEventListener('change', (e) => handleFile(e.target.files[0], 'cnh'));
+
+      // Eventos Drag-over e drag-enter
+      ['dragenter', 'dragover'].forEach(eventName => {
+        zoneFatura.addEventListener(eventName, (e) => { e.preventDefault(); zoneFatura.classList.add('dragover'); });
+        zoneCnh.addEventListener(eventName, (e) => { e.preventDefault(); zoneCnh.classList.add('dragover'); });
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        zoneFatura.addEventListener(eventName, (e) => { e.preventDefault(); zoneFatura.classList.remove('dragover'); });
+        zoneCnh.addEventListener(eventName, (e) => { e.preventDefault(); zoneCnh.classList.remove('dragover'); });
+      });
+
+      // Eventos de Drop
+      zoneFatura.addEventListener('drop', (e) => {
+        const file = e.dataTransfer.files[0];
+        if (file) {
+          const dt = new DataTransfer();
+          dt.items.add(file);
+          inputFatura.files = dt.files;
+          handleFile(file, 'fatura');
+        }
+      });
+
+      zoneCnh.addEventListener('drop', (e) => {
+        const file = e.dataTransfer.files[0];
+        if (file) {
+          const dt = new DataTransfer();
+          dt.items.add(file);
+          inputCnh.files = dt.files;
+          handleFile(file, 'cnh');
+        }
+      });
+
+      function handleFile(file, type) {
+        if (!file) return;
+
+        const zone = type === 'fatura' ? zoneFatura : zoneCnh;
+        const preview = type === 'fatura' ? prevFatura : prevCnh;
+        const prompt = type === 'fatura' ? document.getElementById('prompt-fatura') : document.getElementById('prompt-cnh');
+        const nameLabel = type === 'fatura' ? nameFatura : nameCnh;
+        const err = type === 'fatura' ? errFatura : errCnh;
+
+        // Validar formato
+        const allowed = ['image/jpeg', 'image/png', 'image/jpg', 'application/pdf'];
+        if (!allowed.includes(file.type)) {
+          zone.classList.add('invalid');
+          alert('Apenas arquivos de imagem (JPG/PNG) ou PDF são aceitos.');
+          return;
+        }
+
+        // Validar tamanho (10MB)
+        if (file.size > 10 * 1024 * 1024) {
+          zone.classList.add('invalid');
+          alert('O arquivo excede o tamanho limite de 10MB.');
+          return;
+        }
+
+        // Limpar erros
+        zone.classList.remove('invalid');
+        err.style.display = 'none';
+
+        // Atualizar interface
+        zone.classList.add('has-file');
+        prompt.classList.add('hidden');
+        preview.classList.remove('hidden');
+
+        if (type === 'fatura') {
+          nameLabel.textContent = 'Fatura Anexada ✓';
+        } else {
+          nameLabel.textContent = 'Documento Anexado ✓';
+        }
+
+        const iconWrapperEl = preview.querySelector('.file-icon-wrapper');
+        if (iconWrapperEl) {
+          if (file.type === 'application/pdf') {
+            iconWrapperEl.innerHTML = `
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E53E3E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #E53E3E; flex-shrink: 0;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            `;
+          } else {
+            iconWrapperEl.innerHTML = `
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary); flex-shrink: 0;">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            `;
+          }
+        }
+
+        // Forçar estilos inline de layout e truncamento via JS para contornar qualquer cache de CSS
+        zone.style.border = 'none';
+        zone.style.background = 'transparent';
+        zone.style.padding = '0';
+        zone.style.boxShadow = 'none';
+        zone.style.display = 'flex';
+        zone.style.flexDirection = 'column';
+        zone.style.alignItems = 'stretch';
+        zone.style.width = '100%';
+        zone.style.minWidth = '0';
+
+        preview.style.display = 'flex';
+        preview.style.flexDirection = 'column';
+        preview.style.alignItems = 'stretch';
+        preview.style.width = '100%';
+        preview.style.minWidth = '0';
+
+        const cardEl = preview.querySelector('.file-attached-card');
+        if (cardEl) {
+          cardEl.style.display = 'flex';
+          cardEl.style.alignItems = 'center';
+          cardEl.style.width = '100%';
+          cardEl.style.minWidth = '0';
+          cardEl.style.boxSizing = 'border-box';
+        }
+
+        const detailsEl = preview.querySelector('.file-details');
+        if (detailsEl) {
+          detailsEl.style.display = 'block';
+          detailsEl.style.flex = '1';
+          detailsEl.style.minWidth = '0';
+          detailsEl.style.overflow = 'hidden';
+        }
+
+        nameLabel.style.display = 'block';
+        nameLabel.style.width = '100%';
+        nameLabel.style.whiteSpace = 'nowrap';
+        nameLabel.style.overflow = 'hidden';
+        nameLabel.style.textOverflow = 'ellipsis';
+      }
+
+      // Remover Fatura
+      btnRemoveFatura.addEventListener('click', (e) => {
+        e.stopPropagation();
+        inputFatura.value = '';
+        zoneFatura.classList.remove('has-file', 'invalid');
+        prevFatura.classList.add('hidden');
+        document.getElementById('prompt-fatura').classList.remove('hidden');
+
+        // Resetar estilos inline da fatura
+        zoneFatura.style.border = '';
+        zoneFatura.style.background = '';
+        zoneFatura.style.padding = '';
+        zoneFatura.style.boxShadow = '';
+        zoneFatura.style.display = '';
+        zoneFatura.style.flexDirection = '';
+        zoneFatura.style.alignItems = '';
+        zoneFatura.style.width = '';
+        zoneFatura.style.minWidth = '';
+      });
+
+      // Remover CNH
+      btnRemoveCnh.addEventListener('click', (e) => {
+        e.stopPropagation();
+        inputCnh.value = '';
+        zoneCnh.classList.remove('has-file', 'invalid');
+        prevCnh.classList.add('hidden');
+        document.getElementById('prompt-cnh').classList.remove('hidden');
+
+        // Resetar estilos inline da CNH
+        zoneCnh.style.border = '';
+        zoneCnh.style.background = '';
+        zoneCnh.style.padding = '';
+        zoneCnh.style.boxShadow = '';
+        zoneCnh.style.display = '';
+        zoneCnh.style.flexDirection = '';
+        zoneCnh.style.alignItems = '';
+        zoneCnh.style.width = '';
+        zoneCnh.style.minWidth = '';
+      });
+
+      // ==========================================
+      // 5. SUBMISSÃO VIA FORMSUBMIT AJAX
+      // ==========================================
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        let ok = true;
+
+        // Validar Fatura
+        if (!inputFatura.files[0]) {
+          zoneFatura.classList.add('invalid');
+          errFatura.style.display = 'block';
+          ok = false;
+        } else {
+          zoneFatura.classList.remove('invalid');
+          errFatura.style.display = 'none';
+        }
+
+        // Validar CNH
+        if (!inputCnh.files[0]) {
+          zoneCnh.classList.add('invalid');
+          errCnh.style.display = 'block';
+          ok = false;
+        } else {
+          zoneCnh.classList.remove('invalid');
+          errCnh.style.display = 'none';
+        }
+
+        // Validar Consentimento
+        if (!checkConsent.checked) {
+          consentGroup.classList.add('invalid');
+          errConsent.style.display = 'block';
+          ok = false;
+        } else {
+          consentGroup.classList.remove('invalid');
+          errConsent.style.display = 'none';
+        }
+
+        checkConsent.addEventListener('change', () => {
+          if (checkConsent.checked) {
+            consentGroup.classList.remove('invalid');
+            errConsent.style.display = 'none';
+          }
+        });
+
+        if (!ok) return;
+
+        // Habilitar Loading State
+        btnSubmit.disabled = true;
+        btnText.style.opacity = '0.3';
+        btnSpinner.classList.remove('hidden');
+
+        // Construir FormData do próprio elemento form
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(INTEGRATION_ENDPOINT, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: formData
+          });
+
+          if (!response.ok) {
+            let details = `Status ${response.status}`;
+            try {
+              const errTxt = await response.text();
+              if (errTxt) details += ` - ${errTxt.substring(0, 150)}`;
+            } catch (_) {}
+            throw new Error(`Erro no servidor n8n (${details})`);
+          }
+
+          let result;
+          try {
+            result = await response.json();
+          } catch (jsonErr) {
+            throw new Error('O n8n não respondeu em formato JSON. Verifique se o webhook do n8n está ativo e configurado para retornar JSON.');
+          }
+
+          if (result.success === true || result.success === "true") {
+            // Mostrar sucesso
+            stepper.classList.add('hidden');
+            step2.classList.remove('active');
+            step2.classList.add('hidden');
+            successScreen.classList.remove('hidden');
+            ind2.classList.remove('active');
+            ind2.classList.add('completed');
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            throw new Error(result.message || 'O n8n iniciou o fluxo, mas o retorno não contém success: true.');
+          }
+        } catch (error) {
+          console.error('Erro de envio via AJAX:', error);
+          alert(`Houve um erro no envio do cadastro. Detalhes: ${error.message}\n\nPor favor, revise o n8n ou fale com nosso suporte.`);
+          
+          btnSubmit.disabled = false;
+          btnText.style.opacity = '1';
+          btnSpinner.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
