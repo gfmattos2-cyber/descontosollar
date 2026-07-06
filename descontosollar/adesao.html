@@ -1108,7 +1108,8 @@
         "CABOCLANEW": "Cabocla de Nova Lima",
         "CABOCLASA": "Cabocla de Nova Lima",
         "CABOCLANOVALIMA": "Cabocla de Nova Lima",
-        "SOL": "Sol (Interno)"
+        "SOL": "Sol (Interno)",
+        "DESCONTOSOLLAR": "Desconto Sollar (Parceiro Especial)"
       };
 
       let cleanCode = "";
@@ -1138,12 +1139,50 @@
 
       // Definir a taxa de desconto (padrão 20%)
       const cleanDesc = refDesc.trim().replace('%', '');
+      let basePercent = (cleanCode === "DESCONTOSOLLAR") ? "22" : cleanDesc;
+
       if (inputDescontoPercentual) {
-        inputDescontoPercentual.value = cleanDesc;
+        inputDescontoPercentual.value = basePercent;
       }
       const visibleDescInput = document.getElementById('desconto_visible');
       if (visibleDescInput) {
-        visibleDescInput.value = `${cleanDesc}%`;
+        visibleDescInput.value = `${basePercent}%`;
+      }
+
+      // Ouvinte de digitação no campo de cupom/código de parceiro
+      if (inputParceiro) {
+        inputParceiro.addEventListener('input', (e) => {
+          const typedVal = e.target.value.trim().toUpperCase();
+          
+          if (typedVal === "DESCONTOSOLLAR") {
+            // Força 22% se colocar o código especial
+            if (inputDescontoPercentual) inputDescontoPercentual.value = "22";
+            if (visibleDescInput) visibleDescInput.value = "22%";
+            if (inputNomeParceiro) inputNomeParceiro.value = PARTNER_MAP["DESCONTOSOLLAR"];
+            if (partnerStatus) {
+              partnerStatus.textContent = `✓ Código especial ativado: 22% de desconto!`;
+              partnerStatus.style.display = 'block';
+              partnerStatus.style.color = '#2e7d32';
+            }
+          } else {
+            // Se digitar qualquer outro código, volta ao padrão original da URL
+            const urlBasedPercent = (cleanCode === "DESCONTOSOLLAR") ? "22" : cleanDesc;
+            const urlBasedName = partnerName;
+            
+            if (inputDescontoPercentual) inputDescontoPercentual.value = urlBasedPercent;
+            if (visibleDescInput) visibleDescInput.value = `${urlBasedPercent}%`;
+            if (inputNomeParceiro) inputNomeParceiro.value = urlBasedName;
+            
+            if (partnerStatus) {
+              if (typedVal) {
+                partnerStatus.textContent = `Cupom inserido: ${typedVal}`;
+                partnerStatus.style.color = '#555555';
+              } else {
+                partnerStatus.style.display = 'none';
+              }
+            }
+          }
+        });
       }
 
       // ==========================================
