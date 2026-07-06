@@ -860,13 +860,9 @@
           <legend class="hidden">Dados Pessoais</legend>
           
           <div class="benefit-callout">
-            <h3>Garanta até 25% de Desconto Fixo</h3>
+            <h3>Garanta Desconto Fixo na sua conta de energia</h3>
             <p>Assine nossa usina solar 100% digital. Sem investimentos, sem obras e sem taxa de fidelidade.</p>
             <div class="benefit-tags">
-              <div class="benefit-tag">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent); flex-shrink: 0;"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                até 25% de desconto
-              </div>
               <div class="benefit-tag">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary); flex-shrink: 0;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
                 Sem Obras
@@ -877,6 +873,11 @@
               </div>
             </div>
             <span class="footnote">*Válido para contas da CEMIG a partir de R$ 150,00.</span>
+          </div>
+
+          <div class="form-group" id="desconto-display-group">
+            <label for="desconto_visible" style="font-weight: 700;">Desconto Garantido na Fatura</label>
+            <input type="text" id="desconto_visible" name="desconto_visible" readonly style="background-color: var(--primary-claro); color: var(--primary-esc); font-weight: 800; border: 1.5px solid var(--primary); cursor: not-allowed;" value="20%">
           </div>
 
           <div class="form-group">
@@ -908,7 +909,7 @@
           <div class="form-group" id="partner-group" style="margin-bottom: 20px;">
             <label for="codigo_parceiro" style="font-weight: 700;">Código do Parceiro / Cupom (Opcional)</label>
             <div style="position: relative; display: flex; align-items: center; width: 100%;">
-              <input type="text" id="codigo_parceiro" name="codigo_parceiro" placeholder="Ex: PADARIAZE" style="text-transform: uppercase; padding-right: 40px;">
+              <input type="text" id="codigo_parceiro" name="codigo_parceiro" placeholder="Ex: DESCONTOSOLLAR" style="text-transform: uppercase; padding-right: 40px;">
               <span id="partner-lock-icon" style="position: absolute; right: 16px; display: none; color: #2e7d32; font-size: 0.85rem;">🔒</span>
             </div>
             <input type="hidden" id="nome_parceiro" name="nome_parceiro">
@@ -918,6 +919,14 @@
 
           <div class="btn-actions">
             <button type="button" class="btn btn-primary" id="btn-next">Continuar Adesão &rarr;</button>
+          </div>
+
+          <div class="whatsapp-support" style="margin-top: 24px; text-align: center; border-top: 1px dashed #e2e8f0; padding-top: 16px;">
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 8px;">Ainda tem dúvidas? Fale com o nosso time no WhatsApp:</p>
+            <a href="https://wa.me/5531984035604?text=Olá,%20tenho%20dúvidas%20sobre%20a%20adesão%20do%20Desconto%20Sollar." target="_blank" class="btn" style="background-color: #25D366; color: #ffffff; border: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; width: 100%; text-decoration: none; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#1ebd5c'" onmouseout="this.style.backgroundColor='#25D366'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.528 2.008 14.068.996 11.45.996c-5.447 0-9.875 4.37-9.879 9.8.002 2.012.528 3.982 1.523 5.736l-.991 3.616 3.73-.974zm12.013-6.937c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.738.164-.219.329-.848 1.07-1.039 1.29-.19.219-.382.246-.71.082-.328-.164-1.386-.511-2.64-1.63-1.037-.926-1.737-2.072-1.941-2.4-.204-.329-.022-.507.142-.671.147-.148.328-.383.493-.574.164-.19.219-.328.328-.548.109-.219.055-.411-.028-.575-.082-.164-.738-1.78-.973-2.347-.216-.52-.464-.447-.638-.456-.164-.008-.356-.01-.548-.01-.191 0-.507.071-.772.356-.266.287-1.012.986-1.012 2.402 0 1.417 1.029 2.787 1.173 2.979.144.192 2.027 3.132 4.909 4.372.685.295 1.22.471 1.637.603.689.219 1.316.188 1.812.114.553-.083 1.94-.793 2.213-1.56.274-.768.274-1.426.192-1.56-.083-.134-.301-.219-.629-.383z"/></svg>
+              Converse com nosso time
+            </a>
           </div>
         </fieldset>
 
@@ -1086,7 +1095,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const refCode = urlParams.get('ref') || urlParams.get('parceiro') || urlParams.get('cupom');
       const refNome = urlParams.get('nome');
-      const refDesc = urlParams.get('desc') || urlParams.get('desconto') || '25';
+      const refDesc = urlParams.get('desc') || urlParams.get('desconto') || '20';
       
       const inputParceiro = document.getElementById('codigo_parceiro');
       const inputNomeParceiro = document.getElementById('nome_parceiro');
@@ -1127,9 +1136,14 @@
         inputNomeParceiro.value = partnerName;
       }
 
-      // Definir a taxa de desconto (padrão 25%)
+      // Definir a taxa de desconto (padrão 20%)
+      const cleanDesc = refDesc.trim().replace('%', '');
       if (inputDescontoPercentual) {
-        inputDescontoPercentual.value = refDesc.trim();
+        inputDescontoPercentual.value = cleanDesc;
+      }
+      const visibleDescInput = document.getElementById('desconto_visible');
+      if (visibleDescInput) {
+        visibleDescInput.value = `${cleanDesc}%`;
       }
 
       // ==========================================
